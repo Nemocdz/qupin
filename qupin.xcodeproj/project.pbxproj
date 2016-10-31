@@ -13,9 +13,10 @@
 		DA2BE2091DBE528900AEB48F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2BE2081DBE528900AEB48F /* Assets.xcassets */; };
 		DA2BE20C1DBE528900AEB48F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2BE20A1DBE528900AEB48F /* LaunchScreen.storyboard */; };
 		DA2BE2171DBE528900AEB48F /* qupinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2BE2161DBE528900AEB48F /* qupinTests.m */; };
-		DA2BE2221DBE545700AEB48F /* Login&Sighin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2BE2211DBE545700AEB48F /* Login&Sighin.storyboard */; };
-		DA2BE2291DBE553F00AEB48F /* Login&SighinVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2BE2281DBE553F00AEB48F /* Login&SighinVC.m */; };
+		DA2BE2221DBE545700AEB48F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2BE2211DBE545700AEB48F /* Login.storyboard */; };
 		DA2BE22C1DBE759E00AEB48F /* FirstPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2BE22B1DBE759E00AEB48F /* FirstPageVC.m */; };
+		DAC706361DC71AD700483D60 /* UINavigationController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */; };
+		DAC706391DC71DA900483D60 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC706381DC71DA900483D60 /* LoginVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +43,13 @@
 		DA2BE2121DBE528900AEB48F /* qupinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qupinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2BE2161DBE528900AEB48F /* qupinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = qupinTests.m; sourceTree = "<group>"; };
 		DA2BE2181DBE528900AEB48F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA2BE2211DBE545700AEB48F /* Login&Sighin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Login&Sighin.storyboard"; path = "Login&Sighin/Login&Sighin.storyboard"; sourceTree = "<group>"; };
-		DA2BE2271DBE553F00AEB48F /* Login&SighinVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Login&SighinVC.h"; path = "Login&Sighin/Login&SighinVC.h"; sourceTree = "<group>"; };
-		DA2BE2281DBE553F00AEB48F /* Login&SighinVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Login&SighinVC.m"; path = "Login&Sighin/Login&SighinVC.m"; sourceTree = "<group>"; };
+		DA2BE2211DBE545700AEB48F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = "Login&Sighin/Login.storyboard"; sourceTree = "<group>"; };
 		DA2BE22A1DBE759E00AEB48F /* FirstPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstPageVC.h; path = "Login&Sighin/FirstPageVC.h"; sourceTree = "<group>"; };
 		DA2BE22B1DBE759E00AEB48F /* FirstPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstPageVC.m; path = "Login&Sighin/FirstPageVC.m"; sourceTree = "<group>"; };
+		DAC706341DC71AD700483D60 /* UINavigationController+StatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+StatusBar.h"; sourceTree = "<group>"; };
+		DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+StatusBar.m"; sourceTree = "<group>"; };
+		DAC706371DC71DA900483D60 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = "Login&Sighin/LoginVC.h"; sourceTree = "<group>"; };
+		DAC706381DC71DA900483D60 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = "Login&Sighin/LoginVC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +102,11 @@
 		DA2BE1FB1DBE528900AEB48F /* qupin */ = {
 			isa = PBXGroup;
 			children = (
-				DA2BE2231DBE547300AEB48F /* Login&Sighin */,
+				DA2BE2231DBE547300AEB48F /* Login */,
 				DA2BE1FF1DBE528900AEB48F /* AppDelegate.h */,
 				DA2BE2001DBE528900AEB48F /* AppDelegate.m */,
+				DAC706341DC71AD700483D60 /* UINavigationController+StatusBar.h */,
+				DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */,
 				DA2BE2081DBE528900AEB48F /* Assets.xcassets */,
 				DA2BE20A1DBE528900AEB48F /* LaunchScreen.storyboard */,
 				DA2BE20D1DBE528900AEB48F /* Info.plist */,
@@ -127,15 +132,15 @@
 			path = qupinTests;
 			sourceTree = "<group>";
 		};
-		DA2BE2231DBE547300AEB48F /* Login&Sighin */ = {
+		DA2BE2231DBE547300AEB48F /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				DA2BE2261DBE54DC00AEB48F /* Contreoller */,
 				DA2BE2251DBE54D000AEB48F /* View */,
 				DA2BE2241DBE54C600AEB48F /* Model */,
-				DA2BE2211DBE545700AEB48F /* Login&Sighin.storyboard */,
+				DA2BE2211DBE545700AEB48F /* Login.storyboard */,
 			);
-			name = "Login&Sighin";
+			name = Login;
 			sourceTree = "<group>";
 		};
 		DA2BE2241DBE54C600AEB48F /* Model */ = {
@@ -155,10 +160,10 @@
 		DA2BE2261DBE54DC00AEB48F /* Contreoller */ = {
 			isa = PBXGroup;
 			children = (
-				DA2BE2271DBE553F00AEB48F /* Login&SighinVC.h */,
-				DA2BE2281DBE553F00AEB48F /* Login&SighinVC.m */,
 				DA2BE22A1DBE759E00AEB48F /* FirstPageVC.h */,
 				DA2BE22B1DBE759E00AEB48F /* FirstPageVC.m */,
+				DAC706371DC71DA900483D60 /* LoginVC.h */,
+				DAC706381DC71DA900483D60 /* LoginVC.m */,
 			);
 			name = Contreoller;
 			sourceTree = "<group>";
@@ -219,11 +224,12 @@
 		DA2BE1F11DBE528800AEB48F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Nemocdz;
 				TargetAttributes = {
 					DA2BE1F81DBE528800AEB48F = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8HQ2P3SCVF;
 						ProvisioningStyle = Automatic;
 					};
 					DA2BE2111DBE528900AEB48F = {
@@ -258,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2BE20C1DBE528900AEB48F /* LaunchScreen.storyboard in Resources */,
-				DA2BE2221DBE545700AEB48F /* Login&Sighin.storyboard in Resources */,
+				DA2BE2221DBE545700AEB48F /* Login.storyboard in Resources */,
 				DA2BE2091DBE528900AEB48F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,8 +331,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2BE2291DBE553F00AEB48F /* Login&SighinVC.m in Sources */,
+				DAC706361DC71AD700483D60 /* UINavigationController+StatusBar.m in Sources */,
 				DA2BE2011DBE528900AEB48F /* AppDelegate.m in Sources */,
+				DAC706391DC71DA900483D60 /* LoginVC.m in Sources */,
 				DA2BE22C1DBE759E00AEB48F /* FirstPageVC.m in Sources */,
 				DA2BE1FE1DBE528900AEB48F /* main.m in Sources */,
 			);
@@ -380,6 +387,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -402,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -427,6 +435,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -443,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -455,6 +464,8 @@
 			baseConfigurationReference = 05974F67BD683248650E816A /* Pods-qupin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8HQ2P3SCVF;
 				INFOPLIST_FILE = qupin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nemocdz.qupin;
@@ -467,6 +478,8 @@
 			baseConfigurationReference = 0150448C1E3D4981D4629306 /* Pods-qupin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8HQ2P3SCVF;
 				INFOPLIST_FILE = qupin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nemocdz.qupin;

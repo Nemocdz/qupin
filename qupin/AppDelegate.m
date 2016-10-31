@@ -16,8 +16,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login&Sighin" bundle:nil] ;
-    self.window.rootViewController=[storyboard instantiateInitialViewController];
+    //设置启动界面
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil] ;
+    self.window.rootViewController = [storyboard instantiateInitialViewController];
+    
+    
+    //定义全局NavigationBar样式
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"Nav Bar"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:1. green:.71 blue:.42 alpha:1.]];
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0,-80) forBarMetrics:UIBarMetricsDefault];
+    
     return YES;
 
 }
