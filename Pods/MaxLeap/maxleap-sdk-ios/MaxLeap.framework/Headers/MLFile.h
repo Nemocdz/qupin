@@ -15,9 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
  A file of binary data stored on the MaxLeap servers. This can be a image, video, or anything else
  that an application needs to reference in a non-relational way.
  */
-@interface MLFile : NSObject
+@interface MLFile : NSObject <NSSecureCoding>
 
 /** @name Creating a MLFile */
+
+- (instancetype)init NS_UNAVAILABLE;
 
 /*!
  Creates a file with given data. A name will be assigned to it by the server.
@@ -40,6 +42,16 @@ NS_ASSUME_NONNULL_BEGIN
  @param path The path to the file that will be uploaded to MaxLeap
  */
 + (instancetype)fileWithName:(nullable NSString *)name contentsAtPath:(NSString *)path;
+
+
+/**
+ Create a file with url.
+
+ @param url The url
+
+ @return A MLFile object.
+ */
++ (instancetype)fileWithUrl:(NSString *)url;
 
 /*!
  The name of the file.

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  The MLObject class represent the data persisted to the MaxLeap cloud. This is the main class to interact with to fetch data from and save data to the cloud.
  */
-@interface MLObject : NSObject
+@interface MLObject : NSObject <NSSecureCoding>
 
 #pragma - mark Constructors
 
@@ -53,10 +53,10 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  Initializes a new MLObject with a class name.
  
- @param newClassName A class name can be any alphanumeric string that begins with a letter. It represents an object in your app, like a User or a Document.
+ @param className A class name can be any alphanumeric string that begins with a letter. It represents an object in your app, like a User or a Document.
  @return Returns the object that is instantiated with the given class name.
  */
-- (instancetype)initWithClassName:(NSString *)newClassName;
+- (instancetype)initWithClassName:(NSString *)className;
 
 #pragma mark -
 #pragma mark Properties
@@ -110,14 +110,14 @@ NS_ASSUME_NONNULL_BEGIN
  @param object The object for `key`. A strong reference to the object is maintained by `MLObject`.
  @param key The key. Raises an `NSInvalidArgumentException` if `key` is `nil`.
  */
-- (void)setObject:(id)object forKey:(NSString *)key;
+- (instancetype)setObject:(id)object forKey:(NSString *)key;
 
 /*!
  Unsets a key on the object.
  
  @param key The key.
  */
-- (void)removeObjectForKey:(NSString *)key;
+- (instancetype)removeObjectForKey:(NSString *)key;
 
 /*!
  * In LLVM 4.0 (XCode 4.5) or higher allows myMLObject[key].
@@ -153,7 +153,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param object The object to add.
  @param key The key.
  */
-- (void)addObject:(id)object forKey:(NSString *)key;
+- (instancetype)addObject:(id)object forKey:(NSString *)key;
 
 /*!
  Adds the objects contained in another array to the end of the array associated with a given key.
@@ -161,7 +161,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param objects The array of objects to add.
  @param key The key.
  */
-- (void)addObjectsFromArray:(NSArray *)objects forKey:(NSString *)key;
+- (instancetype)addObjectsFromArray:(NSArray *)objects forKey:(NSString *)key;
 
 /*!
  Adds an object to the array associated with a given key, only if it is not already present in the array. The position of the insert is not guaranteed.
@@ -169,7 +169,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param object The object to add.
  @param key The key.
  */
-- (void)addUniqueObject:(id)object forKey:(NSString *)key;
+- (instancetype)addUniqueObject:(id)object forKey:(NSString *)key;
 
 /*!
  Adds the objects contained in another array to the array associated with a given key, only adding elements which are not already present in the array. The position of the insert is not guaranteed.
@@ -177,7 +177,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param objects The array of objects to add.
  @param key The key.
  */
-- (void)addUniqueObjectsFromArray:(NSArray *)objects forKey:(NSString *)key;
+- (instancetype)addUniqueObjectsFromArray:(NSArray *)objects forKey:(NSString *)key;
 
 /*!
  Removes all occurrences of an object from the array associated with a given key.
@@ -185,7 +185,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param object The object to remove.
  @param key The key.
  */
-- (void)removeObject:(id)object forKey:(NSString *)key;
+- (instancetype)removeObject:(id)object forKey:(NSString *)key;
 
 /*!
  Removes all occurrences of the objects contained in another array from the array associated with a given key.
@@ -193,7 +193,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param objects The array of objects to remove.
  @param key The key.
  */
-- (void)removeObjectsInArray:(NSArray *)objects forKey:(NSString *)key;
+- (instancetype)removeObjectsInArray:(NSArray *)objects forKey:(NSString *)key;
 
 #pragma mark -
 #pragma mark Increment
@@ -203,7 +203,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param key The key.
  */
-- (void)incrementKey:(NSString *)key;
+- (instancetype)incrementKey:(NSString *)key;
 
 /*!
  Increments the given key by a number.
@@ -211,7 +211,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param key The key.
  @param amount The amount to increment.
  */
-- (void)incrementKey:(NSString *)key byAmount:(NSNumber *)amount;
+- (instancetype)incrementKey:(NSString *)key byAmount:(NSNumber *)amount;
 
 #pragma mark -
 #pragma mark Clear

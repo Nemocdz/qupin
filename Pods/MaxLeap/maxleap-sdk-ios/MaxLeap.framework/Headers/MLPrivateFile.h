@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @name Creating a Private File
 ///--------------------------------------
 
+- (instancetype)init NS_UNAVAILABLE;
+
 /**
  *  Initialize a privateFile with localPath and remotePath.
  *
@@ -29,7 +31,17 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return A private file instance.
  */
-- (instancetype)initWithLocalFileAtPath:(nullable NSString *)localPath remotePath:(NSString *)remotePath NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithLocalFileAtPath:(nullable NSString *)localPath remotePath:(NSString *)remotePath OBJC_SWIFT_UNAVAILABLE("");
+
+/**
+ *  Initialize a privateFile with localPath and remotePath.
+ *
+ *  @param localPath  The path of the file on local disk.
+ *  @param remotePath The path of the file on remote server, shouldn't be nil.
+ *
+ *  @return A private file instance.
+ */
+- (instancetype)initWithLocalPath:(nullable NSString *)localPath remotePath:(NSString *)remotePath NS_DESIGNATED_INITIALIZER;
 
 /**
  *  Create a privateFile with remotePath.

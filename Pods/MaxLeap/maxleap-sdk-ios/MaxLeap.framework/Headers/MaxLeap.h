@@ -52,6 +52,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)clientKey;
 
++ (MLSite)site;
+
 /**
  *  get the timeout interval for MaxLeap request
  *

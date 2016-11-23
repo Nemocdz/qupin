@@ -8,15 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		6956BA5C850D1776CDE94125 /* libPods-qupin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D3A2A311FDEF13B085FDEB /* libPods-qupin.a */; };
+		DA1DD1951DD07A4E008D0081 /* SigninVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1DD1941DD07A4E008D0081 /* SigninVC.m */; };
+		DA1DD1981DD09ECD008D0081 /* LoginM.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1DD1971DD09ECD008D0081 /* LoginM.m */; };
+		DA1DD19E1DD0AFBD008D0081 /* QPPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1DD19D1DD0AFBD008D0081 /* QPPicker.m */; };
 		DA2BE1FE1DBE528900AEB48F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2BE1FD1DBE528900AEB48F /* main.m */; };
 		DA2BE2011DBE528900AEB48F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2BE2001DBE528900AEB48F /* AppDelegate.m */; };
 		DA2BE2091DBE528900AEB48F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2BE2081DBE528900AEB48F /* Assets.xcassets */; };
 		DA2BE20C1DBE528900AEB48F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2BE20A1DBE528900AEB48F /* LaunchScreen.storyboard */; };
 		DA2BE2171DBE528900AEB48F /* qupinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2BE2161DBE528900AEB48F /* qupinTests.m */; };
 		DA2BE2221DBE545700AEB48F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2BE2211DBE545700AEB48F /* Login.storyboard */; };
-		DA2BE22C1DBE759E00AEB48F /* FirstPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2BE22B1DBE759E00AEB48F /* FirstPageVC.m */; };
+		DA2BE22C1DBE759E00AEB48F /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2BE22B1DBE759E00AEB48F /* LoginVC.m */; };
+		DA2E1BA21DE0545C00FAF81C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E1BA11DE0545C00FAF81C /* Home.storyboard */; };
+		DAB288701DD33FA600640A03 /* QPStringConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB2886F1DD33FA600640A03 /* QPStringConstant.m */; };
 		DAC706361DC71AD700483D60 /* UINavigationController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */; };
-		DAC706391DC71DA900483D60 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC706381DC71DA900483D60 /* LoginVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,12 @@
 		0150448C1E3D4981D4629306 /* Pods-qupin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qupin.release.xcconfig"; path = "Pods/Target Support Files/Pods-qupin/Pods-qupin.release.xcconfig"; sourceTree = "<group>"; };
 		05974F67BD683248650E816A /* Pods-qupin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qupin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qupin/Pods-qupin.debug.xcconfig"; sourceTree = "<group>"; };
 		96D3A2A311FDEF13B085FDEB /* libPods-qupin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qupin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1DD1931DD07A4E008D0081 /* SigninVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SigninVC.h; path = "Login&Sighin/SigninVC.h"; sourceTree = "<group>"; };
+		DA1DD1941DD07A4E008D0081 /* SigninVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SigninVC.m; path = "Login&Sighin/SigninVC.m"; sourceTree = "<group>"; };
+		DA1DD1961DD09ECD008D0081 /* LoginM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginM.h; path = "Login&Sighin/LoginM.h"; sourceTree = "<group>"; };
+		DA1DD1971DD09ECD008D0081 /* LoginM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginM.m; path = "Login&Sighin/LoginM.m"; sourceTree = "<group>"; };
+		DA1DD19C1DD0AFBD008D0081 /* QPPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPPicker.h; sourceTree = "<group>"; };
+		DA1DD19D1DD0AFBD008D0081 /* QPPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPPicker.m; sourceTree = "<group>"; };
 		DA2BE1F91DBE528900AEB48F /* qupin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qupin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2BE1FD1DBE528900AEB48F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA2BE1FF1DBE528900AEB48F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,12 +54,13 @@
 		DA2BE2161DBE528900AEB48F /* qupinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = qupinTests.m; sourceTree = "<group>"; };
 		DA2BE2181DBE528900AEB48F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA2BE2211DBE545700AEB48F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = "Login&Sighin/Login.storyboard"; sourceTree = "<group>"; };
-		DA2BE22A1DBE759E00AEB48F /* FirstPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstPageVC.h; path = "Login&Sighin/FirstPageVC.h"; sourceTree = "<group>"; };
-		DA2BE22B1DBE759E00AEB48F /* FirstPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstPageVC.m; path = "Login&Sighin/FirstPageVC.m"; sourceTree = "<group>"; };
+		DA2BE22A1DBE759E00AEB48F /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = "Login&Sighin/LoginVC.h"; sourceTree = "<group>"; };
+		DA2BE22B1DBE759E00AEB48F /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = "Login&Sighin/LoginVC.m"; sourceTree = "<group>"; };
+		DA2E1BA11DE0545C00FAF81C /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Home/Home.storyboard; sourceTree = "<group>"; };
+		DAB2886E1DD33FA600640A03 /* QPStringConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPStringConstant.h; sourceTree = "<group>"; };
+		DAB2886F1DD33FA600640A03 /* QPStringConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPStringConstant.m; sourceTree = "<group>"; };
 		DAC706341DC71AD700483D60 /* UINavigationController+StatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+StatusBar.h"; sourceTree = "<group>"; };
 		DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+StatusBar.m"; sourceTree = "<group>"; };
-		DAC706371DC71DA900483D60 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = "Login&Sighin/LoginVC.h"; sourceTree = "<group>"; };
-		DAC706381DC71DA900483D60 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = "Login&Sighin/LoginVC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +146,11 @@
 		DA2BE2231DBE547300AEB48F /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				DA2BE2211DBE545700AEB48F /* Login.storyboard */,
+				DA2BE2241DBE54C600AEB48F /* Model */,
 				DA2BE2261DBE54DC00AEB48F /* Contreoller */,
 				DA2BE2251DBE54D000AEB48F /* View */,
-				DA2BE2241DBE54C600AEB48F /* Model */,
-				DA2BE2211DBE545700AEB48F /* Login.storyboard */,
+				DA2E1BA31DE0546B00FAF81C /* Home */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -146,6 +158,10 @@
 		DA2BE2241DBE54C600AEB48F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA1DD1961DD09ECD008D0081 /* LoginM.h */,
+				DA1DD1971DD09ECD008D0081 /* LoginM.m */,
+				DAB2886E1DD33FA600640A03 /* QPStringConstant.h */,
+				DAB2886F1DD33FA600640A03 /* QPStringConstant.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -153,6 +169,8 @@
 		DA2BE2251DBE54D000AEB48F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA1DD19C1DD0AFBD008D0081 /* QPPicker.h */,
+				DA1DD19D1DD0AFBD008D0081 /* QPPicker.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -160,12 +178,20 @@
 		DA2BE2261DBE54DC00AEB48F /* Contreoller */ = {
 			isa = PBXGroup;
 			children = (
-				DA2BE22A1DBE759E00AEB48F /* FirstPageVC.h */,
-				DA2BE22B1DBE759E00AEB48F /* FirstPageVC.m */,
-				DAC706371DC71DA900483D60 /* LoginVC.h */,
-				DAC706381DC71DA900483D60 /* LoginVC.m */,
+				DA2BE22A1DBE759E00AEB48F /* LoginVC.h */,
+				DA2BE22B1DBE759E00AEB48F /* LoginVC.m */,
+				DA1DD1931DD07A4E008D0081 /* SigninVC.h */,
+				DA1DD1941DD07A4E008D0081 /* SigninVC.m */,
 			);
 			name = Contreoller;
+			sourceTree = "<group>";
+		};
+		DA2E1BA31DE0546B00FAF81C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E1BA11DE0545C00FAF81C /* Home.storyboard */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		DE854A90ED2DD636DC10C5C9 /* Pods */ = {
@@ -266,6 +292,7 @@
 				DA2BE20C1DBE528900AEB48F /* LaunchScreen.storyboard in Resources */,
 				DA2BE2221DBE545700AEB48F /* Login.storyboard in Resources */,
 				DA2BE2091DBE528900AEB48F /* Assets.xcassets in Resources */,
+				DA2E1BA21DE0545C00FAF81C /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,8 +360,11 @@
 			files = (
 				DAC706361DC71AD700483D60 /* UINavigationController+StatusBar.m in Sources */,
 				DA2BE2011DBE528900AEB48F /* AppDelegate.m in Sources */,
-				DAC706391DC71DA900483D60 /* LoginVC.m in Sources */,
-				DA2BE22C1DBE759E00AEB48F /* FirstPageVC.m in Sources */,
+				DA2BE22C1DBE759E00AEB48F /* LoginVC.m in Sources */,
+				DAB288701DD33FA600640A03 /* QPStringConstant.m in Sources */,
+				DA1DD1951DD07A4E008D0081 /* SigninVC.m in Sources */,
+				DA1DD19E1DD0AFBD008D0081 /* QPPicker.m in Sources */,
+				DA1DD1981DD09ECD008D0081 /* LoginM.m in Sources */,
 				DA2BE1FE1DBE528900AEB48F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

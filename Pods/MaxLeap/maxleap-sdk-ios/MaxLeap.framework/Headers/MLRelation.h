@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  A class that is used to access all of the children of a many-to-many relationship. Each instance of MLRelation is associated with a particular parent object and key.
  */
-@interface MLRelation : NSObject
+@interface MLRelation : NSObject <NSSecureCoding>
 
 /*!
  @abstract The name of the class of the target child objects.

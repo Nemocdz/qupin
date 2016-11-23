@@ -1,43 +1,61 @@
 //
-//  LoginVC.m
+//  FirstPageVC.m
 //  qupin
 //
-//  Created by Nemocdz on 2016/10/31.
+//  Created by Nemocdz on 2016/10/25.
 //  Copyright © 2016年 Nemocdz. All rights reserved.
 //
 
 #import "LoginVC.h"
-
-@interface LoginVC ()
+#import "LoginM.h"
+@interface LoginVC()
 @property (strong, nonatomic) IBOutlet UITextField *phoneNumber;
 @property (strong, nonatomic) IBOutlet UITextField *verificationCode;
-
+- (IBAction)sendVerificationCode:(UIButton *)sender;
+- (IBAction)goHomePage:(UIButton *)sender;
+- (IBAction)login:(UIButton *)sender;
+- (IBAction)wechatLogin:(UIButton *)sender;
+- (IBAction)qqLogin:(UIButton *)sender;
 @end
 
 @implementation LoginVC
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.phoneNumber addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+    [LoginM textField:self.phoneNumber LimitInNumber:11];
+    [LoginM textField:self.verificationCode LimitInNumber:6];
 }
 
-#pragma mark - event response
-
-- (void)textFieldDidChange:(UITextField *)textField{
-    int limited = 0;
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
     
-    if (textField == self.phoneNumber){
-        limited = 11;
-    }
-    if (textField == self.verificationCode){
-        limited = 6;
-    }
-    
-    if (textField.text.length > limited) {
-        textField.text = [textField.text substringToIndex:limited];
-    }
 }
 
-#pragma mark - setter&getter
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
 
+- (BOOL)prefersStatusBarHidden{
+    return YES;
+}
+
+
+- (IBAction)sendVerificationCode:(UIButton *)sender {
+}
+
+- (IBAction)goHomePage:(UIButton *)sender {
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
+    UIViewController *vc = [storyBoard instantiateViewControllerWithIdentifier:@"test"];
+    [self showViewController:vc sender:nil];
+}
+
+- (IBAction)login:(UIButton *)sender {
+}
+
+- (IBAction)wechatLogin:(UIButton *)sender {
+}
+
+- (IBAction)qqLogin:(UIButton *)sender {
+}
 @end

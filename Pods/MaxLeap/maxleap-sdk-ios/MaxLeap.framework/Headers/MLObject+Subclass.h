@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  Subclasses support simpler initializers, query syntax, and dynamic synthesizers. The following shows an example subclass:<br>
  
+    @code
     @interface MYGame : MLObject <MLSubclassing>
  
     // Accessing this property is the same as objectForKey:@"title"
@@ -48,6 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
  
         }
     }];
+    @endcode
  */
 @interface MLObject (Subclass)
 
@@ -58,7 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
  This method can only be called on subclasses which conform to MLSubclassing.<br>
  This method should not be overridden.
  */
-- (id)init;
+- (instancetype)init;
 
 /*!
  Creates an instance of the registered subclass with this class's leapClassName.<br>

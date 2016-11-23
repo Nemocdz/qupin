@@ -55,14 +55,14 @@ NS_ASSUME_NONNULL_BEGIN
  Sets the device token string property from an NSData-encoded token.
  @param deviceTokenData The deviceToken got from `application:didRegisterForRemoteNotificationsWithDeviceToken:` method.
  */
-- (void)setDeviceTokenFromData:(nullable NSData *)deviceTokenData;
+- (instancetype)setDeviceTokenFromData:(nullable NSData *)deviceTokenData __deprecated_msg("use `-setDeviceTokenFromData:forSandbox:` instead");
 
 /*!
  Sets the device token string property from an NSData-encoded token.
  @param deviceTokenData The deviceToken got from `application:didRegisterForRemoteNotificationsWithDeviceToken:` method.
  @param forSandbox      Whether the remote push notification is under production envrionment.
  */
-- (void)setDeviceTokenFromData:(nullable NSData *)deviceTokenData forSandbox:(BOOL)forSandbox;
+- (instancetype)setDeviceTokenFromData:(nullable NSData *)deviceTokenData forSandbox:(BOOL)forSandbox;
 
 /**
  *  Whether the remote push notification is under development envrionment.

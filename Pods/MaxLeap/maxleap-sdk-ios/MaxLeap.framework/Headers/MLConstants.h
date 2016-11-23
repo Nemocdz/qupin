@@ -6,14 +6,14 @@
 @class MLObject, MLUser, MLFile, MLPrivateFile, MLConfig;
 
 ///--------------------------------------
-/// @name Version
+#pragma mark - Version
 ///--------------------------------------
 
 // MaxLeap SDK Version
-#define MaxLeap_VERSION @"2.1.3"
+#define MaxLeap_VERSION @"2.2.0"
 
 ///--------------------------------------
-/// @name MaxLeap Sites
+#pragma mark - MaxLeap Sites
 ///--------------------------------------
 
 /**
@@ -29,7 +29,54 @@ typedef NS_ENUM(int, MLSite) {
 };
 
 ///--------------------------------------
-/// @name Errors
+#pragma mark - Cache Policies
+///--------------------------------------
+
+/**
+ `MLCachePolicy` specifies different caching policies that could be used with `MLQuery`.
+ 
+ This lets you show data when the user's device is offline,
+ or when the app has just started and network requests have not yet had time to complete.
+ MaxLeap takes care of automatically flushing the cache when it takes up too much space.
+ 
+ @warning Cache policy could only be set when Local Datastore is not enabled.
+ 
+ @see MLQuery
+ */
+typedef NS_ENUM(int, MLCachePolicy) {
+    /**
+     The query does not load from the cache or save results to the cache.
+     This is the default cache policy.
+     */
+    kMLCachePolicyIgnoreCache = 0,
+    /**
+     The query only loads from the cache, ignoring the network.
+     If there are no cached results, this causes a `NSError` with `kMLErrorCacheMiss` code.
+     */
+    kMLCachePolicyCacheOnly,
+    /**
+     The query does not load from the cache, but it will save results to the cache.
+     */
+    kMLCachePolicyNetworkOnly,
+    /**
+     The query first tries to load from the cache, but if that fails, it loads results from the network.
+     If there are no cached results, this causes a `NSError` with `kMLErrorCacheMiss` code.
+     */
+    kMLCachePolicyCacheElseNetwork,
+    /**
+     The query first tries to load from the network, but if that fails, it loads results from the cache.
+     If there are no cached results, this causes a `NSError` with `kMLErrorCacheMiss` code.
+     */
+    kMLCachePolicyNetworkElseCache,
+    /**
+     The query first loads from the cache, then loads from the network.
+     The callback will be called twice - first with the cached results, then with the network results.
+     */
+    kMLCachePolicyCacheThenNetwork
+};
+
+///--------------------------------------
+#pragma mark - Errors
 ///--------------------------------------
 
 extern NSString * const __nonnull MLErrorDomain;
@@ -223,7 +270,7 @@ typedef NS_ENUM(NSInteger, MLErrorCode) {
 };
 
 ///--------------------------------------
-/// @name Blocks
+#pragma mark - Blocks
 ///--------------------------------------
 
 typedef void (^MLBooleanResultBlock)(BOOL succeeded, NSError *__nullable error);
@@ -241,6 +288,10 @@ typedef void (^MLFileResultBlock)(MLFile *__nullable file, NSError *__nullable e
 typedef void (^MLPrivateFileResultBlock)(MLPrivateFile *__nullable file, NSError *__nullable error);
 typedef void (^MLConfigResultBlock)(MLConfig *__nullable config, NSError *__nullable error);
 typedef void (^MLUsageResultBlock)(NSInteger fileCount, long usedCapacity, NSError *__nullable error);
+
+///--------------------------------------
+#pragma mark -
+///--------------------------------------
 
 #ifndef ML_DEPRECATED
 #  ifdef __deprecated_msg
@@ -263,7 +314,7 @@ typedef void (^MLUsageResultBlock)(NSInteger fileCount, long usedCapacity, NSErr
 #endif
 
 ///--------------------------------------
-/// @name Obj-C Generics Macros
+#pragma mark - Obj-C Generics Macros
 ///--------------------------------------
 
 #if __has_feature(objc_generics) || __has_extension(objc_generics)

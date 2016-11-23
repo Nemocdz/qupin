@@ -52,12 +52,11 @@ typedef NS_ENUM(NSUInteger, MLInAppMessageDismissButtonLocation){
 ///--------------------------------------
 
 /**
- *  Used to record performance data for push notifications
- *
- *  @param notificationInfo The dictionary from either `didFinishLaunchingWithOptions:` or
+ Used to record performance data for push notifications
+
+ @param notificationInfo The dictionary from either `didFinishLaunchingWithOptions:` or
  `didReceiveRemoteNotification:` should be passed on to this method.
- *
- *  @return YES if the remote notification is successfully handled.
+ @return YES if the remote notification is successfully handled.
  */
 + (BOOL)handlePushNotificationOpened:(nullable NSDictionary *)notificationInfo;
 

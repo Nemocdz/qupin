@@ -183,19 +183,38 @@ typedef void (^MLConfigValueChangedBlock)(id __nullable newValue, id __nullable 
 ///--------------------------------------
 
 /*!
- @abstract Gets the `MLConfig` *asynchronously* and executes the given callback block.
+ @abstract Refresh the `MLConfig` *asynchronously* and executes the given callback block.
  
  @param block The block to execute. It should have the following argument signature: `^(MLConfig *config, NSError *error)`.
  */
-+ (void)getConfigInBackgroundWithBlock:(nullable MLConfigResultBlock)block;
++ (void)getConfigInBackgroundWithBlock:(nullable MLConfigResultBlock)block
+__deprecated_msg("use `+refreshInBackgroundWithBlock:` instead")
+OBJC_SWIFT_UNAVAILABLE("use `+refreshInBackgroundWithBlock:` instead");
+
+/*!
+ @abstract Refresh the `MLConfig` *asynchronously* and executes the given callback block.
+ 
+ @param block The block to execute. It should have the following argument signature: `^(MLConfig *config, NSError *error)`.
+ */
++ (void)refreshInBackgroundWithBlock:(nullable MLConfigResultBlock)block;
 
 /**
- *  Gets the `MLConfig` *asynchronously* for the given keys from MaxLeap servers and executes the given callback block.
+ *  Refresh the `MLConfig` *asynchronously* for the given keys from MaxLeap servers and executes the given callback block.
  *
  *  @param keys  The keys to get, pass `nil` to get all key-values.
  *  @param block The block to execute. It should have the following argument signature: `^(MLConfig *config, NSError *error)`.
  */
-+ (void)getValuesForKeys:(nullable NSArray ML_GENERIC(NSString*) *)keys inBackgroundWithBlock:(nullable MLConfigResultBlock)block;
++ (void)getValuesForKeys:(nullable NSArray ML_GENERIC(NSString*) *)keys inBackgroundWithBlock:(nullable MLConfigResultBlock)block
+__deprecated_msg("use `+refreshKeysInBackgroud:block:` instead")
+OBJC_SWIFT_UNAVAILABLE("use `+refreshKeysInBackgroud:block:` instead");
+
+/**
+ *  Refresh the `MLConfig` *asynchronously* for the given keys from MaxLeap servers and executes the given callback block.
+ *
+ *  @param keys  The keys to get, pass `nil` to get all key-values.
+ *  @param block The block to execute. It should have the following argument signature: `^(MLConfig *config, NSError *error)`.
+ */
++ (void)refreshKeysInBackgroud:(nullable NSArray ML_GENERIC(NSString*) *)keys block:(nullable MLConfigResultBlock)block;
 
 ///--------------------------------------
 /// @name Observe Config Changes

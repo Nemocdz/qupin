@@ -48,12 +48,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong, nullable) NSDictionary ML_GENERIC(NSString*, NSString*) *htmlArgs;
 
+- (instancetype)init NS_UNAVAILABLE;
+
 /**
  * Create an email with the templateName.
  *
  * @param templateName The template name
  */
-- (instancetype)initWithTemplateName:(NSString *)templateName;
+- (instancetype)initWithTemplateName:(NSString *)templateName NS_DESIGNATED_INITIALIZER;
 
 /**
  * Send this email.
