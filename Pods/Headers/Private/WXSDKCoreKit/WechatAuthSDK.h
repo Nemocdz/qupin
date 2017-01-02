@@ -1,1 +1,1 @@
-../../../WXSDKCoreKit/SDK1.7.3 demo/SDKExport/WechatAuthSDK.h
+../../../WXSDKCoreKit/OpenSDK1.7.5/WechatAuthSDK.h

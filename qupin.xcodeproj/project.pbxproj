@@ -19,8 +19,13 @@
 		DA2BE2221DBE545700AEB48F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2BE2211DBE545700AEB48F /* Login.storyboard */; };
 		DA2BE22C1DBE759E00AEB48F /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2BE22B1DBE759E00AEB48F /* LoginVC.m */; };
 		DA2E1BA21DE0545C00FAF81C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E1BA11DE0545C00FAF81C /* Home.storyboard */; };
-		DAB288701DD33FA600640A03 /* QPStringConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB2886F1DD33FA600640A03 /* QPStringConstant.m */; };
+		DA3163681E1A9B3B00EA9965 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3163661E1A9B3B00EA9965 /* 2.png */; };
+		DA3163691E1A9B3B00EA9965 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3163671E1A9B3B00EA9965 /* 1.png */; };
+		DAA82ABE1E156F24005FC736 /* QPTaskListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82ABD1E156F24005FC736 /* QPTaskListItem.m */; };
 		DAC706361DC71AD700483D60 /* UINavigationController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */; };
+		DAD3C2D11E151D0600C73832 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3C2D01E151D0600C73832 /* HomeVC.m */; };
+		DAD3C2D71E15305200C73832 /* QPTaskListDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3C2D61E15305200C73832 /* QPTaskListDatasource.m */; };
+		DAD3C2DA1E1534B600C73832 /* QPTaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3C2D91E1534B600C73832 /* QPTaskCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +62,19 @@
 		DA2BE22A1DBE759E00AEB48F /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = "Login&Sighin/LoginVC.h"; sourceTree = "<group>"; };
 		DA2BE22B1DBE759E00AEB48F /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = "Login&Sighin/LoginVC.m"; sourceTree = "<group>"; };
 		DA2E1BA11DE0545C00FAF81C /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Home/Home.storyboard; sourceTree = "<group>"; };
+		DA3163661E1A9B3B00EA9965 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		DA3163671E1A9B3B00EA9965 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		DAA82ABC1E156F24005FC736 /* QPTaskListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPTaskListItem.h; path = Home/QPTaskListItem.h; sourceTree = "<group>"; };
+		DAA82ABD1E156F24005FC736 /* QPTaskListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPTaskListItem.m; path = Home/QPTaskListItem.m; sourceTree = "<group>"; };
 		DAB2886E1DD33FA600640A03 /* QPStringConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPStringConstant.h; sourceTree = "<group>"; };
-		DAB2886F1DD33FA600640A03 /* QPStringConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPStringConstant.m; sourceTree = "<group>"; };
 		DAC706341DC71AD700483D60 /* UINavigationController+StatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+StatusBar.h"; sourceTree = "<group>"; };
 		DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+StatusBar.m"; sourceTree = "<group>"; };
+		DAD3C2CF1E151D0600C73832 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeVC.h; path = Home/HomeVC.h; sourceTree = "<group>"; };
+		DAD3C2D01E151D0600C73832 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeVC.m; path = Home/HomeVC.m; sourceTree = "<group>"; };
+		DAD3C2D51E15305200C73832 /* QPTaskListDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPTaskListDatasource.h; path = Home/QPTaskListDatasource.h; sourceTree = "<group>"; };
+		DAD3C2D61E15305200C73832 /* QPTaskListDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPTaskListDatasource.m; path = Home/QPTaskListDatasource.m; sourceTree = "<group>"; };
+		DAD3C2D81E1534B600C73832 /* QPTaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPTaskCell.h; path = Home/QPTaskCell.h; sourceTree = "<group>"; };
+		DAD3C2D91E1534B600C73832 /* QPTaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPTaskCell.m; path = Home/QPTaskCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				DA2BE2231DBE547300AEB48F /* Login */,
+				DA2E1BA31DE0546B00FAF81C /* Home */,
 				DA2BE1FF1DBE528900AEB48F /* AppDelegate.h */,
 				DA2BE2001DBE528900AEB48F /* AppDelegate.m */,
+				DAB2886E1DD33FA600640A03 /* QPStringConstant.h */,
 				DAC706341DC71AD700483D60 /* UINavigationController+StatusBar.h */,
 				DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */,
 				DA2BE2081DBE528900AEB48F /* Assets.xcassets */,
@@ -150,7 +166,6 @@
 				DA2BE2241DBE54C600AEB48F /* Model */,
 				DA2BE2261DBE54DC00AEB48F /* Contreoller */,
 				DA2BE2251DBE54D000AEB48F /* View */,
-				DA2E1BA31DE0546B00FAF81C /* Home */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -160,8 +175,6 @@
 			children = (
 				DA1DD1961DD09ECD008D0081 /* LoginM.h */,
 				DA1DD1971DD09ECD008D0081 /* LoginM.m */,
-				DAB2886E1DD33FA600640A03 /* QPStringConstant.h */,
-				DAB2886F1DD33FA600640A03 /* QPStringConstant.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -190,8 +203,34 @@
 			isa = PBXGroup;
 			children = (
 				DA2E1BA11DE0545C00FAF81C /* Home.storyboard */,
+				DAD3C2CF1E151D0600C73832 /* HomeVC.h */,
+				DAD3C2D01E151D0600C73832 /* HomeVC.m */,
+				DA3163651E1A91FE00EA9965 /* Carousel */,
+				DA3163641E1A91E900EA9965 /* TaskLIst */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		DA3163641E1A91E900EA9965 /* TaskLIst */ = {
+			isa = PBXGroup;
+			children = (
+				DAD3C2D51E15305200C73832 /* QPTaskListDatasource.h */,
+				DAD3C2D61E15305200C73832 /* QPTaskListDatasource.m */,
+				DAD3C2D81E1534B600C73832 /* QPTaskCell.h */,
+				DAD3C2D91E1534B600C73832 /* QPTaskCell.m */,
+				DAA82ABC1E156F24005FC736 /* QPTaskListItem.h */,
+				DAA82ABD1E156F24005FC736 /* QPTaskListItem.m */,
+			);
+			name = TaskLIst;
+			sourceTree = "<group>";
+		};
+		DA3163651E1A91FE00EA9965 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				DA3163661E1A9B3B00EA9965 /* 2.png */,
+				DA3163671E1A9B3B00EA9965 /* 1.png */,
+			);
+			name = Carousel;
 			sourceTree = "<group>";
 		};
 		DE854A90ED2DD636DC10C5C9 /* Pods */ = {
@@ -291,6 +330,8 @@
 			files = (
 				DA2BE20C1DBE528900AEB48F /* LaunchScreen.storyboard in Resources */,
 				DA2BE2221DBE545700AEB48F /* Login.storyboard in Resources */,
+				DA3163681E1A9B3B00EA9965 /* 2.png in Resources */,
+				DA3163691E1A9B3B00EA9965 /* 1.png in Resources */,
 				DA2BE2091DBE528900AEB48F /* Assets.xcassets in Resources */,
 				DA2E1BA21DE0545C00FAF81C /* Home.storyboard in Resources */,
 			);
@@ -359,13 +400,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC706361DC71AD700483D60 /* UINavigationController+StatusBar.m in Sources */,
+				DAA82ABE1E156F24005FC736 /* QPTaskListItem.m in Sources */,
 				DA2BE2011DBE528900AEB48F /* AppDelegate.m in Sources */,
 				DA2BE22C1DBE759E00AEB48F /* LoginVC.m in Sources */,
-				DAB288701DD33FA600640A03 /* QPStringConstant.m in Sources */,
+				DAD3C2D71E15305200C73832 /* QPTaskListDatasource.m in Sources */,
+				DAD3C2D11E151D0600C73832 /* HomeVC.m in Sources */,
 				DA1DD1951DD07A4E008D0081 /* SigninVC.m in Sources */,
 				DA1DD19E1DD0AFBD008D0081 /* QPPicker.m in Sources */,
 				DA1DD1981DD09ECD008D0081 /* LoginM.m in Sources */,
 				DA2BE1FE1DBE528900AEB48F /* main.m in Sources */,
+				DAD3C2DA1E1534B600C73832 /* QPTaskCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +541,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8HQ2P3SCVF;
 				INFOPLIST_FILE = qupin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nemocdz.qupin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,6 +556,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8HQ2P3SCVF;
 				INFOPLIST_FILE = qupin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nemocdz.qupin;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,29 +1,40 @@
 PODS:
   - Masonry (1.0.2)
-  - MaxLeap/Core (2.2.0)
-  - MaxLeap/QQUtils (2.2.0):
+  - MaxLeap/Core (2.2.2)
+  - MaxLeap/QQUtils (2.2.2):
     - MaxLeap/Core
-    - TencentOpenApiSDK (~> 2.9.5)
-  - MaxLeap/WeChatUtils (2.2.0):
+    - TencentOpenApiSDK (~> 2.9)
+  - MaxLeap/WeChatUtils (2.2.2):
     - MaxLeap/Core
     - WXSDKCoreKit (~> 1.7)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - TencentOpenApiSDK (2.9.5):
     - TencentOpenApiSDK/Basic (= 2.9.5)
   - TencentOpenApiSDK/Basic (2.9.5)
-  - WXSDKCoreKit (1.7.3)
+  - UITableView+FDTemplateLayoutCell (1.5.beta)
+  - WXSDKCoreKit (1.7.5)
 
 DEPENDENCIES:
   - Masonry
   - MaxLeap/Core
   - MaxLeap/QQUtils
   - MaxLeap/WeChatUtils
+  - SDCycleScrollView (~> 1.64)
+  - UITableView+FDTemplateLayoutCell (~> 1.5.beta)
 
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  MaxLeap: 50281481bfd84293a082fa3630529809c89a3424
+  MaxLeap: 7eca39218bd574c74238cc4fc344090434bf12e4
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
   TencentOpenApiSDK: a0d7716edd6eb438d65828168e8e5137301b436d
-  WXSDKCoreKit: a0b4c653b80b2da500582988589692ad41d13f68
+  UITableView+FDTemplateLayoutCell: 02b508ab1cb4cea16a8c17ac83d2cd1fd72124f9
+  WXSDKCoreKit: cfbbfb050e6dfbf9903e8a70e523aea0dcc1e069
 
-PODFILE CHECKSUM: 0295c559a7b95eefdb76d7aca9cde2fbaf3e9a95
+PODFILE CHECKSUM: 59464b5d40d1f20e7d856666d25171812977d281
 
 COCOAPODS: 1.2.0.beta.1

@@ -19,14 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //设置启动界面
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil] ;
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:nil] ;
     self.window.rootViewController = [storyboard instantiateInitialViewController];
     
     
     //定义全局NavigationBar样式
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"Nav Bar"] forBarMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setTintColor:QUPIN_ORANGECOLOR];
+    [[UINavigationBar appearance] setTintColor:QP_ORANGECOLOR];
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0,-80) forBarMetrics:UIBarMetricsDefault];
     
 //    [MaxLeap setApplicationId:@"580e1a2969dbd1000750340d" clientKey:@"YlF4cTVmdXBJZlB2VjJ4SnRPajdBZw" site:MLSiteCN];

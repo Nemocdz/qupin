@@ -14,9 +14,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *phoneNumber;
 @property (strong, nonatomic) IBOutlet UITextField *verificationCode;
 
-
-
-
 @end
 
 @implementation SigninVC

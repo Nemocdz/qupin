@@ -37,14 +37,14 @@ static const int toolBarHeight = 32;
 
 - (void)initWithArray:(NSArray *)array{
     self.frame = CGRectMake(0, SCREEN_HEIGHT - pickerViewHeight, SCREEN_WIDTH, pickerViewHeight);
-    self.backgroundColor = QUPIN_BLACKCOLOR;
+    self.backgroundColor = QP_BLACKCOLOR;
     self.dataArray = array;
     isSilde = NO;
     
     UIButton *btnOK = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH -70, 0, 40, 30)];
     btnOK.titleLabel.font = [UIFont systemFontOfSize:18.0];
     [btnOK setTitle:@"确定" forState:UIControlStateNormal];
-    [btnOK setTitleColor:QUPIN_ORANGECOLOR forState:UIControlStateNormal];
+    [btnOK setTitleColor:QP_ORANGECOLOR forState:UIControlStateNormal];
     [btnOK addTarget:self action:@selector(pickerViewBtnOk:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:btnOK];
         
@@ -56,8 +56,8 @@ static const int toolBarHeight = 32;
     [self addSubview:btnCancel];
         
     UIPickerView *pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 32, SCREEN_WIDTH, pickerViewHeight - toolBarHeight)];
-    [pickerView setTintColor:QUPIN_ORANGECOLOR];
-    pickerView.backgroundColor = QUPIN_BLACKCOLOR;
+    [pickerView setTintColor:QP_ORANGECOLOR];
+    pickerView.backgroundColor = QP_BLACKCOLOR;
     pickerView.delegate = self;
     pickerView.dataSource = self;
     [self addSubview:pickerView];
@@ -125,7 +125,7 @@ static const int toolBarHeight = 32;
     genderLabel.textAlignment = NSTextAlignmentCenter;
     genderLabel.text = self.dataArray[row];
     genderLabel.font = [UIFont systemFontOfSize:23.0];
-    genderLabel.textColor = QUPIN_ORANGECOLOR;
+    genderLabel.textColor = QP_ORANGECOLOR;
     
     return genderLabel;
 }

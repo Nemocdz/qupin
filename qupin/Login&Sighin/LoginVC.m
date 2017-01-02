@@ -23,6 +23,7 @@
     [super viewDidLoad];
     [LoginM textField:self.phoneNumber LimitInNumber:11];
     [LoginM textField:self.verificationCode LimitInNumber:6];
+    self.view.backgroundColor = [UIColor blackColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -47,7 +48,8 @@
 - (IBAction)goHomePage:(UIButton *)sender {
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
     UIViewController *vc = [storyBoard instantiateViewControllerWithIdentifier:@"test"];
-    [self showViewController:vc sender:nil];
+    [self presentViewController:vc animated:YES completion:nil];
+   // [self showViewController:vc sender:nil];
 }
 
 - (IBAction)login:(UIButton *)sender {

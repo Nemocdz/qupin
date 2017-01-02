@@ -10,7 +10,7 @@
 ///--------------------------------------
 
 // MaxLeap SDK Version
-#define MaxLeap_VERSION @"2.2.0"
+#define MaxLeap_VERSION @"2.2.2"
 
 ///--------------------------------------
 #pragma mark - MaxLeap Sites
