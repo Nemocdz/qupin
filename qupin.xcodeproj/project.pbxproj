@@ -21,6 +21,13 @@
 		DA2E1BA21DE0545C00FAF81C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E1BA11DE0545C00FAF81C /* Home.storyboard */; };
 		DA3163681E1A9B3B00EA9965 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3163661E1A9B3B00EA9965 /* 2.png */; };
 		DA3163691E1A9B3B00EA9965 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3163671E1A9B3B00EA9965 /* 1.png */; };
+		DA53019C1E266E10002A2FB4 /* QPTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA53019B1E266E10002A2FB4 /* QPTabbarController.m */; };
+		DA915CC01E268B6B004B425C /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA915CBF1E268B6B004B425C /* Task.storyboard */; };
+		DA915CC21E268B72004B425C /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA915CC11E268B72004B425C /* Chat.storyboard */; };
+		DA915CC41E268B7A004B425C /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA915CC31E268B7A004B425C /* User.storyboard */; };
+		DA915CCA1E269204004B425C /* QPPlusBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = DA915CC91E269204004B425C /* QPPlusBtn.m */; };
+		DA915CCC1E2698C6004B425C /* Publish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA915CCB1E2698C6004B425C /* Publish.storyboard */; };
+		DA915CCF1E269ECA004B425C /* PublishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA915CCE1E269ECA004B425C /* PublishVC.m */; };
 		DAA82ABE1E156F24005FC736 /* QPTaskListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82ABD1E156F24005FC736 /* QPTaskListItem.m */; };
 		DAC706361DC71AD700483D60 /* UINavigationController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */; };
 		DAD3C2D11E151D0600C73832 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3C2D01E151D0600C73832 /* HomeVC.m */; };
@@ -64,6 +71,16 @@
 		DA2E1BA11DE0545C00FAF81C /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Home/Home.storyboard; sourceTree = "<group>"; };
 		DA3163661E1A9B3B00EA9965 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		DA3163671E1A9B3B00EA9965 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		DA53019A1E266E10002A2FB4 /* QPTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPTabbarController.h; path = Home/QPTabbarController.h; sourceTree = "<group>"; };
+		DA53019B1E266E10002A2FB4 /* QPTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPTabbarController.m; path = Home/QPTabbarController.m; sourceTree = "<group>"; };
+		DA915CBF1E268B6B004B425C /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
+		DA915CC11E268B72004B425C /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		DA915CC31E268B7A004B425C /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		DA915CC81E269204004B425C /* QPPlusBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPPlusBtn.h; sourceTree = "<group>"; };
+		DA915CC91E269204004B425C /* QPPlusBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPPlusBtn.m; sourceTree = "<group>"; };
+		DA915CCB1E2698C6004B425C /* Publish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Publish.storyboard; sourceTree = "<group>"; };
+		DA915CCD1E269ECA004B425C /* PublishVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishVC.h; sourceTree = "<group>"; };
+		DA915CCE1E269ECA004B425C /* PublishVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishVC.m; sourceTree = "<group>"; };
 		DAA82ABC1E156F24005FC736 /* QPTaskListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPTaskListItem.h; path = Home/QPTaskListItem.h; sourceTree = "<group>"; };
 		DAA82ABD1E156F24005FC736 /* QPTaskListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPTaskListItem.m; path = Home/QPTaskListItem.m; sourceTree = "<group>"; };
 		DAB2886E1DD33FA600640A03 /* QPStringConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPStringConstant.h; sourceTree = "<group>"; };
@@ -128,15 +145,15 @@
 			isa = PBXGroup;
 			children = (
 				DA2BE2231DBE547300AEB48F /* Login */,
+				DA915CC71E268C14004B425C /* User */,
+				DA915CC61E268C06004B425C /* Chat */,
+				DA915CC51E268BE7004B425C /* Task */,
+				DA915CD01E269EE6004B425C /* Publish */,
 				DA2E1BA31DE0546B00FAF81C /* Home */,
 				DA2BE1FF1DBE528900AEB48F /* AppDelegate.h */,
 				DA2BE2001DBE528900AEB48F /* AppDelegate.m */,
-				DAB2886E1DD33FA600640A03 /* QPStringConstant.h */,
-				DAC706341DC71AD700483D60 /* UINavigationController+StatusBar.h */,
-				DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */,
-				DA2BE2081DBE528900AEB48F /* Assets.xcassets */,
-				DA2BE20A1DBE528900AEB48F /* LaunchScreen.storyboard */,
-				DA2BE20D1DBE528900AEB48F /* Info.plist */,
+				DA915CD11E26A2A9004B425C /* Tabbar */,
+				DA915CD21E26A2C3004B425C /* Extension&Constant */,
 				DA2BE1FC1DBE528900AEB48F /* Supporting Files */,
 			);
 			path = qupin;
@@ -145,6 +162,9 @@
 		DA2BE1FC1DBE528900AEB48F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA2BE2081DBE528900AEB48F /* Assets.xcassets */,
+				DA2BE20A1DBE528900AEB48F /* LaunchScreen.storyboard */,
+				DA2BE20D1DBE528900AEB48F /* Info.plist */,
 				DA2BE1FD1DBE528900AEB48F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -164,7 +184,7 @@
 			children = (
 				DA2BE2211DBE545700AEB48F /* Login.storyboard */,
 				DA2BE2241DBE54C600AEB48F /* Model */,
-				DA2BE2261DBE54DC00AEB48F /* Contreoller */,
+				DA2BE2261DBE54DC00AEB48F /* Controller */,
 				DA2BE2251DBE54D000AEB48F /* View */,
 			);
 			name = Login;
@@ -188,7 +208,7 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		DA2BE2261DBE54DC00AEB48F /* Contreoller */ = {
+		DA2BE2261DBE54DC00AEB48F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				DA2BE22A1DBE759E00AEB48F /* LoginVC.h */,
@@ -196,7 +216,7 @@
 				DA1DD1931DD07A4E008D0081 /* SigninVC.h */,
 				DA1DD1941DD07A4E008D0081 /* SigninVC.m */,
 			);
-			name = Contreoller;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		DA2E1BA31DE0546B00FAF81C /* Home */ = {
@@ -231,6 +251,61 @@
 				DA3163671E1A9B3B00EA9965 /* 1.png */,
 			);
 			name = Carousel;
+			sourceTree = "<group>";
+		};
+		DA915CC51E268BE7004B425C /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				DA915CBF1E268B6B004B425C /* Task.storyboard */,
+			);
+			name = Task;
+			sourceTree = "<group>";
+		};
+		DA915CC61E268C06004B425C /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				DA915CC11E268B72004B425C /* Chat.storyboard */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		DA915CC71E268C14004B425C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DA915CC31E268B7A004B425C /* User.storyboard */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		DA915CD01E269EE6004B425C /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				DA915CCD1E269ECA004B425C /* PublishVC.h */,
+				DA915CCE1E269ECA004B425C /* PublishVC.m */,
+				DA915CCB1E2698C6004B425C /* Publish.storyboard */,
+			);
+			name = Publish;
+			sourceTree = "<group>";
+		};
+		DA915CD11E26A2A9004B425C /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				DA53019A1E266E10002A2FB4 /* QPTabbarController.h */,
+				DA53019B1E266E10002A2FB4 /* QPTabbarController.m */,
+				DA915CC81E269204004B425C /* QPPlusBtn.h */,
+				DA915CC91E269204004B425C /* QPPlusBtn.m */,
+			);
+			name = Tabbar;
+			sourceTree = "<group>";
+		};
+		DA915CD21E26A2C3004B425C /* Extension&Constant */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2886E1DD33FA600640A03 /* QPStringConstant.h */,
+				DAC706341DC71AD700483D60 /* UINavigationController+StatusBar.h */,
+				DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */,
+			);
+			name = "Extension&Constant";
 			sourceTree = "<group>";
 		};
 		DE854A90ED2DD636DC10C5C9 /* Pods */ = {
@@ -331,9 +406,13 @@
 				DA2BE20C1DBE528900AEB48F /* LaunchScreen.storyboard in Resources */,
 				DA2BE2221DBE545700AEB48F /* Login.storyboard in Resources */,
 				DA3163681E1A9B3B00EA9965 /* 2.png in Resources */,
+				DA915CC01E268B6B004B425C /* Task.storyboard in Resources */,
+				DA915CCC1E2698C6004B425C /* Publish.storyboard in Resources */,
 				DA3163691E1A9B3B00EA9965 /* 1.png in Resources */,
 				DA2BE2091DBE528900AEB48F /* Assets.xcassets in Resources */,
+				DA915CC21E268B72004B425C /* Chat.storyboard in Resources */,
 				DA2E1BA21DE0545C00FAF81C /* Home.storyboard in Resources */,
+				DA915CC41E268B7A004B425C /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,9 +484,12 @@
 				DA2BE22C1DBE759E00AEB48F /* LoginVC.m in Sources */,
 				DAD3C2D71E15305200C73832 /* QPTaskListDatasource.m in Sources */,
 				DAD3C2D11E151D0600C73832 /* HomeVC.m in Sources */,
+				DA915CCF1E269ECA004B425C /* PublishVC.m in Sources */,
 				DA1DD1951DD07A4E008D0081 /* SigninVC.m in Sources */,
 				DA1DD19E1DD0AFBD008D0081 /* QPPicker.m in Sources */,
 				DA1DD1981DD09ECD008D0081 /* LoginM.m in Sources */,
+				DA53019C1E266E10002A2FB4 /* QPTabbarController.m in Sources */,
+				DA915CCA1E269204004B425C /* QPPlusBtn.m in Sources */,
 				DA2BE1FE1DBE528900AEB48F /* main.m in Sources */,
 				DAD3C2DA1E1534B600C73832 /* QPTaskCell.m in Sources */,
 			);

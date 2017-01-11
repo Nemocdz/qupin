@@ -12,6 +12,7 @@
 #import "QPTaskListItem.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "SDCycleScrollView.h"
+#import "MJRefresh.h"
 
 @interface HomeVC ()<UITableViewDelegate>
 
@@ -27,6 +28,12 @@
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     [self.view addSubview:self.taskListView];
+    self.taskListView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+        
+    }];
+//    self.taskListView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+//        //Call this Block When enter the refresh status automatically
+//    }];
 }
 
 - (NSArray *)getItems{
@@ -83,6 +90,7 @@
         _taskListView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _taskListView.dataSource = self.taskListDatasource;
         _taskListView.delegate = self;
+        _taskListView.showsVerticalScrollIndicator = NO;
         [_taskListView registerClass:[self.taskListDatasource cellClass] forCellReuseIdentifier:[self.taskListDatasource cellIdentifer]];
         _taskListView.tableHeaderView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH * 9 / 16) imageNamesGroup:[self getImages]];
     }

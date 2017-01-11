@@ -1,4 +1,5 @@
 PODS:
+  - CYLTabBarController (1.10.0)
   - Masonry (1.0.2)
   - MaxLeap/Core (2.2.2)
   - MaxLeap/QQUtils (2.2.2):
@@ -7,6 +8,7 @@ PODS:
   - MaxLeap/WeChatUtils (2.2.2):
     - MaxLeap/Core
     - WXSDKCoreKit (~> 1.7)
+  - MJRefresh (3.1.12)
   - SDCycleScrollView (1.65):
     - SDWebImage (~> 3.7)
   - SDWebImage (3.8.2):
@@ -19,22 +21,26 @@ PODS:
   - WXSDKCoreKit (1.7.5)
 
 DEPENDENCIES:
+  - CYLTabBarController
   - Masonry
   - MaxLeap/Core
   - MaxLeap/QQUtils
   - MaxLeap/WeChatUtils
+  - MJRefresh
   - SDCycleScrollView (~> 1.64)
   - UITableView+FDTemplateLayoutCell (~> 1.5.beta)
 
 SPEC CHECKSUMS:
+  CYLTabBarController: 2de9a4c26f50d33574398becf8e7b0aaed794240
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MaxLeap: 7eca39218bd574c74238cc4fc344090434bf12e4
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
   TencentOpenApiSDK: a0d7716edd6eb438d65828168e8e5137301b436d
   UITableView+FDTemplateLayoutCell: 02b508ab1cb4cea16a8c17ac83d2cd1fd72124f9
   WXSDKCoreKit: cfbbfb050e6dfbf9903e8a70e523aea0dcc1e069
 
-PODFILE CHECKSUM: 59464b5d40d1f20e7d856666d25171812977d281
+PODFILE CHECKSUM: 7f4f57a9067c89ccc047f7428b5a491cac45768a
 
 COCOAPODS: 1.2.0.beta.1
