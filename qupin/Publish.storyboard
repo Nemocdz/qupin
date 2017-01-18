@@ -17,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="P7p-rx-COj" kind="relationship" relationship="rootViewController" id="s2m-J0-lsc"/>
+                        <segue destination="P7p-rx-COj" kind="relationship" relationship="rootViewController" id="9AT-UA-BMM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zof-xB-fFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1145" y="105"/>
         </scene>
-        <!--PublishVC-->
+        <!--发布-->
         <scene sceneID="2ic-e6-zIh">
             <objects>
-                <viewController id="P7p-rx-COj" customClass="PublishVC" sceneMemberID="viewController">
+                <viewController id="P7p-rx-COj" customClass="QPPublishVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HkC-pk-Y8a"/>
                         <viewControllerLayoutGuide type="bottom" id="f0M-4m-ANi"/>
@@ -35,13 +35,31 @@
                     <view key="view" contentMode="scaleToFill" id="U5v-z8-2lz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvA-vR-Dn2">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.65719348190000004" blue="0.30564546590000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="KaH-tT-FnH"/>
+                                </constraints>
+                                <state key="normal" title="发布"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HvA-vR-Dn2" secondAttribute="trailing" id="CNG-wO-WE2"/>
+                            <constraint firstItem="f0M-4m-ANi" firstAttribute="top" secondItem="HvA-vR-Dn2" secondAttribute="bottom" id="MuM-Vx-2kb"/>
+                            <constraint firstItem="HvA-vR-Dn2" firstAttribute="leading" secondItem="U5v-z8-2lz" secondAttribute="leading" id="pAh-nN-UcM"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KVj-z9-TUc"/>
+                    <navigationItem key="navigationItem" title="发布" id="KVj-z9-TUc"/>
+                    <connections>
+                        <outlet property="submitBtn" destination="HvA-vR-Dn2" id="O2Q-zz-dd0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QHL-Fj-xXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-244" y="114"/>
+            <point key="canvasLocation" x="-250.40000000000001" y="104.7976011994003"/>
         </scene>
     </scenes>
 </document>

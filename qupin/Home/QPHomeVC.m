@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Nemocdz. All rights reserved.
 //
 
-#import "HomeVC.h"
+#import "QPHomeVC.h"
 #import "QPTaskListDatasource.h"
 #import "QPStringConstant.h"
 #import "QPTaskListItem.h"
@@ -14,7 +14,7 @@
 #import "SDCycleScrollView.h"
 #import "MJRefresh.h"
 
-@interface HomeVC ()<UITableViewDelegate>
+@interface QPHomeVC ()<UITableViewDelegate>
 
 @property (nonatomic ,strong) UITableView *taskListView;
 @property (nonatomic ,strong) UICollectionView *carouselView;
@@ -22,18 +22,13 @@
 
 @end
 
-@implementation HomeVC
+@implementation QPHomeVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     [self.view addSubview:self.taskListView];
-    self.taskListView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
-        
-    }];
-//    self.taskListView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-//        //Call this Block When enter the refresh status automatically
-//    }];
+    [self.taskListView.mj_header beginRefreshing];
 }
 
 - (NSArray *)getItems{
@@ -79,7 +74,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    self.hidesBottomBarWhenPushed = YES;
+    UIViewController *vc = [UIViewController new];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
 }
 
 
@@ -93,6 +92,10 @@
         _taskListView.showsVerticalScrollIndicator = NO;
         [_taskListView registerClass:[self.taskListDatasource cellClass] forCellReuseIdentifier:[self.taskListDatasource cellIdentifer]];
         _taskListView.tableHeaderView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH * 9 / 16) imageNamesGroup:[self getImages]];
+        _taskListView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            [_taskListView reloadData];
+            [_taskListView.mj_header endRefreshing];
+        }];
     }
     return _taskListView;
 }

@@ -30,7 +30,7 @@
         <!--拼单大厅-->
         <scene sceneID="5td-Qf-hwf">
             <objects>
-                <viewController id="Lm8-eS-GPG" customClass="HomeVC" sceneMemberID="viewController">
+                <viewController id="Lm8-eS-GPG" customClass="QPHomeVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MlN-DV-rSS"/>
                         <viewControllerLayoutGuide type="bottom" id="zOA-R0-xjT"/>

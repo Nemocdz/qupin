@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-615" y="32"/>
         </scene>
-        <!--View Controller-->
+        <!--My TaskVC-->
         <scene sceneID="reC-i0-M6X">
             <objects>
-                <viewController id="nwL-z1-4AP" sceneMemberID="viewController">
+                <viewController id="nwL-z1-4AP" customClass="QPMyTaskVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nh0-AB-E2q"/>
                         <viewControllerLayoutGuide type="bottom" id="grB-Za-hbN"/>

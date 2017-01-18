@@ -19,6 +19,7 @@ PODS:
   - TencentOpenApiSDK/Basic (2.9.5)
   - UITableView+FDTemplateLayoutCell (1.5.beta)
   - WXSDKCoreKit (1.7.5)
+  - XLForm (3.3.0)
 
 DEPENDENCIES:
   - CYLTabBarController
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - MJRefresh
   - SDCycleScrollView (~> 1.64)
   - UITableView+FDTemplateLayoutCell (~> 1.5.beta)
+  - XLForm (~> 3.0)
 
 SPEC CHECKSUMS:
   CYLTabBarController: 2de9a4c26f50d33574398becf8e7b0aaed794240
@@ -40,7 +42,8 @@ SPEC CHECKSUMS:
   TencentOpenApiSDK: a0d7716edd6eb438d65828168e8e5137301b436d
   UITableView+FDTemplateLayoutCell: 02b508ab1cb4cea16a8c17ac83d2cd1fd72124f9
   WXSDKCoreKit: cfbbfb050e6dfbf9903e8a70e523aea0dcc1e069
+  XLForm: d5c391dfc62865927b5bcab0a5a0dbfb3e02b0ec
 
-PODFILE CHECKSUM: 7f4f57a9067c89ccc047f7428b5a491cac45768a
+PODFILE CHECKSUM: 79950519712f1177ddc23dcc4fb7cf5064c89245
 
 COCOAPODS: 1.2.0.beta.1

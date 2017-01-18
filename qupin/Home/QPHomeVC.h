@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeVC : UIViewController
+@interface QPHomeVC : UIViewController
 
 @end
