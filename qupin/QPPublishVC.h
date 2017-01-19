@@ -11,6 +11,4 @@
 
 @interface QPPublishVC : XLFormViewController
 
-
-
 @end

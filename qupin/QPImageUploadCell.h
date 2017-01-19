@@ -7,9 +7,10 @@
 //
 
 #import "XLFormBaseCell.h"
-
-static NSString *const XLFormRowDescriptorTypeUpload = @"XLFormRowDescriptorTypeUpload";
+#import "QPStringConstant.h"
 
 @interface QPImageUploadCell : XLFormBaseCell
+
+
 
 @end

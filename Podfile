@@ -3,6 +3,7 @@ target 'qupin' do
   pod 'MaxLeap/WeChatUtils'
   pod 'MaxLeap/QQUtils'
   pod 'Masonry'
+  pod 'CDZImagePicker'
   pod 'CYLTabBarController'
   pod 'MJRefresh'
   pod 'XLForm', '~> 3.0'

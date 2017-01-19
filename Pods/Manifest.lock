@@ -1,4 +1,5 @@
 PODS:
+  - CDZImagePicker (1.0.0)
   - CYLTabBarController (1.10.0)
   - Masonry (1.0.2)
   - MaxLeap/Core (2.2.2)
@@ -22,6 +23,7 @@ PODS:
   - XLForm (3.3.0)
 
 DEPENDENCIES:
+  - CDZImagePicker
   - CYLTabBarController
   - Masonry
   - MaxLeap/Core
@@ -33,6 +35,7 @@ DEPENDENCIES:
   - XLForm (~> 3.0)
 
 SPEC CHECKSUMS:
+  CDZImagePicker: d595d9677bf02f6edc0d1c3ba5042e01b1899997
   CYLTabBarController: 2de9a4c26f50d33574398becf8e7b0aaed794240
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MaxLeap: 7eca39218bd574c74238cc4fc344090434bf12e4
@@ -44,6 +47,6 @@ SPEC CHECKSUMS:
   WXSDKCoreKit: cfbbfb050e6dfbf9903e8a70e523aea0dcc1e069
   XLForm: d5c391dfc62865927b5bcab0a5a0dbfb3e02b0ec
 
-PODFILE CHECKSUM: 79950519712f1177ddc23dcc4fb7cf5064c89245
+PODFILE CHECKSUM: 28b98462b2da85819457c0ceb5f58358231dae96
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.2.0.rc.1

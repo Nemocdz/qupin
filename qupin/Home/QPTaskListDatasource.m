@@ -10,8 +10,6 @@
 #import "QPTaskListItem.h"
 #import "QPTaskCell.h"
 
-
-
 @implementation QPTaskListDatasource
 
 
@@ -20,11 +18,10 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (QPTaskCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     QPTaskCell *cell  = [tableView dequeueReusableCellWithIdentifier:[self cellIdentifer] forIndexPath:indexPath];
     [self setupItemOfCell:cell AtIndexPath:indexPath];
     return cell;
-   
 }
 
 - (void)setupItemOfCell:(QPTaskCell *)cell AtIndexPath:(NSIndexPath *)indexPath{

@@ -43,6 +43,9 @@
                                     <constraint firstAttribute="height" constant="44" id="KaH-tT-FnH"/>
                                 </constraints>
                                 <state key="normal" title="发布"/>
+                                <connections>
+                                    <action selector="submit:" destination="P7p-rx-COj" eventType="touchUpInside" id="176-B6-lvY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

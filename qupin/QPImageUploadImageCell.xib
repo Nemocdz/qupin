@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QPImageUploadImageCell" id="gTV-IL-0wX" customClass="QPImageUploadImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="发单-添加" translatesAutoresizingMaskIntoConstraints="NO" id="69n-56-eo6">
+                        <rect key="frame" x="25" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="69n-56-eo6" secondAttribute="height" multiplier="1:1" id="k6s-9F-nwv"/>
+                        </constraints>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bh9-iD-78D">
+                        <rect key="frame" x="80" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="PFG-PG-zcM"/>
+                            <constraint firstAttribute="width" secondItem="Bh9-iD-78D" secondAttribute="height" multiplier="1:1" id="VHb-mX-uId"/>
+                            <constraint firstAttribute="height" constant="20" id="q6N-Qm-2UT"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="发单-关闭"/>
+                        <connections>
+                            <action selector="delCell:" destination="gTV-IL-0wX" eventType="touchUpInside" id="0Jw-ZL-fgl"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Bh9-iD-78D" firstAttribute="top" secondItem="69n-56-eo6" secondAttribute="top" constant="-5" id="5NH-fV-cM7"/>
+                <constraint firstItem="Bh9-iD-78D" firstAttribute="trailing" secondItem="69n-56-eo6" secondAttribute="trailing" constant="5" id="Fes-50-w8A"/>
+                <constraint firstItem="69n-56-eo6" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="PQu-xl-vKy"/>
+                <constraint firstItem="69n-56-eo6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dK1-Oj-Kvj"/>
+                <constraint firstItem="69n-56-eo6" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.7" id="slq-UM-E5j"/>
+            </constraints>
+            <size key="customSize" width="147" height="133"/>
+            <connections>
+                <outlet property="closeBtn" destination="Bh9-iD-78D" id="cCe-Y8-3Zq"/>
+                <outlet property="imageView" destination="69n-56-eo6" id="E5a-gh-Naw"/>
+            </connections>
+            <point key="canvasLocation" x="73.5" y="93"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="发单-关闭" width="20" height="20"/>
+        <image name="发单-添加" width="59" height="59"/>
+    </resources>
+</document>

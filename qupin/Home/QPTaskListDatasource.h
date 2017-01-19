@@ -18,5 +18,4 @@
 - (NSString *)cellIdentifer;
 - (Class)cellClass;
 
-
 @end

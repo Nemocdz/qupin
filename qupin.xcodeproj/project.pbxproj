@@ -29,13 +29,17 @@
 		DA915CCC1E2698C6004B425C /* Publish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA915CCB1E2698C6004B425C /* Publish.storyboard */; };
 		DA915CCF1E269ECA004B425C /* QPPublishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA915CCE1E269ECA004B425C /* QPPublishVC.m */; };
 		DAA82ABE1E156F24005FC736 /* QPTaskListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82ABD1E156F24005FC736 /* QPTaskListItem.m */; };
+		DAB48B591E30DDE700CF7F6C /* QPTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB48B581E30DDE700CF7F6C /* QPTaskCell.xib */; };
+		DAB48B641E312B3D00CF7F6C /* QPImageUploadImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB48B621E312B3D00CF7F6C /* QPImageUploadImageCell.m */; };
+		DAB48B651E312B3D00CF7F6C /* QPImageUploadImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB48B631E312B3D00CF7F6C /* QPImageUploadImageCell.xib */; };
+		DAB48B681E312B8C00CF7F6C /* QPImageUploadCellDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB48B671E312B8C00CF7F6C /* QPImageUploadCellDataSource.m */; };
+		DAB48B6B1E31428800CF7F6C /* QPImageUploadImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB48B6A1E31428800CF7F6C /* QPImageUploadImageItem.m */; };
 		DAC706361DC71AD700483D60 /* UINavigationController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */; };
 		DAD3C2D11E151D0600C73832 /* QPHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3C2D01E151D0600C73832 /* QPHomeVC.m */; };
 		DAD3C2D71E15305200C73832 /* QPTaskListDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3C2D61E15305200C73832 /* QPTaskListDatasource.m */; };
 		DAD3C2DA1E1534B600C73832 /* QPTaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3C2D91E1534B600C73832 /* QPTaskCell.m */; };
 		DAD9B70D1E2D33F200B60FAA /* QPMyTaskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD9B70C1E2D33F200B60FAA /* QPMyTaskVC.m */; };
 		DAFBD56F1E2FE684000C1BC4 /* QPImageUploadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBD56E1E2FE684000C1BC4 /* QPImageUploadCell.m */; };
-		DAFBD5711E2FF0FE000C1BC4 /* QPImageUploadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFBD5701E2FF0FE000C1BC4 /* QPImageUploadCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +91,14 @@
 		DAA82ABC1E156F24005FC736 /* QPTaskListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPTaskListItem.h; path = Home/QPTaskListItem.h; sourceTree = "<group>"; };
 		DAA82ABD1E156F24005FC736 /* QPTaskListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPTaskListItem.m; path = Home/QPTaskListItem.m; sourceTree = "<group>"; };
 		DAB2886E1DD33FA600640A03 /* QPStringConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPStringConstant.h; sourceTree = "<group>"; };
+		DAB48B581E30DDE700CF7F6C /* QPTaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QPTaskCell.xib; path = Home/QPTaskCell.xib; sourceTree = "<group>"; };
+		DAB48B611E312B3D00CF7F6C /* QPImageUploadImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPImageUploadImageCell.h; sourceTree = "<group>"; };
+		DAB48B621E312B3D00CF7F6C /* QPImageUploadImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPImageUploadImageCell.m; sourceTree = "<group>"; };
+		DAB48B631E312B3D00CF7F6C /* QPImageUploadImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QPImageUploadImageCell.xib; sourceTree = "<group>"; };
+		DAB48B661E312B8C00CF7F6C /* QPImageUploadCellDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPImageUploadCellDataSource.h; sourceTree = "<group>"; };
+		DAB48B671E312B8C00CF7F6C /* QPImageUploadCellDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPImageUploadCellDataSource.m; sourceTree = "<group>"; };
+		DAB48B691E31428800CF7F6C /* QPImageUploadImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPImageUploadImageItem.h; sourceTree = "<group>"; };
+		DAB48B6A1E31428800CF7F6C /* QPImageUploadImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPImageUploadImageItem.m; sourceTree = "<group>"; };
 		DAC706341DC71AD700483D60 /* UINavigationController+StatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+StatusBar.h"; sourceTree = "<group>"; };
 		DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+StatusBar.m"; sourceTree = "<group>"; };
 		DAD3C2CF1E151D0600C73832 /* QPHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPHomeVC.h; path = Home/QPHomeVC.h; sourceTree = "<group>"; };
@@ -99,7 +111,6 @@
 		DAD9B70C1E2D33F200B60FAA /* QPMyTaskVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPMyTaskVC.m; sourceTree = "<group>"; };
 		DAFBD56D1E2FE684000C1BC4 /* QPImageUploadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPImageUploadCell.h; sourceTree = "<group>"; };
 		DAFBD56E1E2FE684000C1BC4 /* QPImageUploadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPImageUploadCell.m; sourceTree = "<group>"; };
-		DAFBD5701E2FF0FE000C1BC4 /* QPImageUploadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QPImageUploadCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +257,7 @@
 				DAD3C2D61E15305200C73832 /* QPTaskListDatasource.m */,
 				DAD3C2D81E1534B600C73832 /* QPTaskCell.h */,
 				DAD3C2D91E1534B600C73832 /* QPTaskCell.m */,
+				DAB48B581E30DDE700CF7F6C /* QPTaskCell.xib */,
 				DAA82ABC1E156F24005FC736 /* QPTaskListItem.h */,
 				DAA82ABD1E156F24005FC736 /* QPTaskListItem.m */,
 			);
@@ -295,7 +307,7 @@
 				DA915CCB1E2698C6004B425C /* Publish.storyboard */,
 				DAFBD56D1E2FE684000C1BC4 /* QPImageUploadCell.h */,
 				DAFBD56E1E2FE684000C1BC4 /* QPImageUploadCell.m */,
-				DAFBD5701E2FF0FE000C1BC4 /* QPImageUploadCell.xib */,
+				DAB48B6C1E31614600CF7F6C /* UploadCollectionview */,
 			);
 			name = Publish;
 			sourceTree = "<group>";
@@ -319,6 +331,20 @@
 				DAC706351DC71AD700483D60 /* UINavigationController+StatusBar.m */,
 			);
 			name = "Extension&Constant";
+			sourceTree = "<group>";
+		};
+		DAB48B6C1E31614600CF7F6C /* UploadCollectionview */ = {
+			isa = PBXGroup;
+			children = (
+				DAB48B661E312B8C00CF7F6C /* QPImageUploadCellDataSource.h */,
+				DAB48B671E312B8C00CF7F6C /* QPImageUploadCellDataSource.m */,
+				DAB48B691E31428800CF7F6C /* QPImageUploadImageItem.h */,
+				DAB48B6A1E31428800CF7F6C /* QPImageUploadImageItem.m */,
+				DAB48B611E312B3D00CF7F6C /* QPImageUploadImageCell.h */,
+				DAB48B621E312B3D00CF7F6C /* QPImageUploadImageCell.m */,
+				DAB48B631E312B3D00CF7F6C /* QPImageUploadImageCell.xib */,
+			);
+			name = UploadCollectionview;
 			sourceTree = "<group>";
 		};
 		DE854A90ED2DD636DC10C5C9 /* Pods */ = {
@@ -418,13 +444,14 @@
 			files = (
 				DA2BE20C1DBE528900AEB48F /* LaunchScreen.storyboard in Resources */,
 				DA2BE2221DBE545700AEB48F /* Login.storyboard in Resources */,
-				DAFBD5711E2FF0FE000C1BC4 /* QPImageUploadCell.xib in Resources */,
+				DAB48B651E312B3D00CF7F6C /* QPImageUploadImageCell.xib in Resources */,
 				DA3163681E1A9B3B00EA9965 /* 2.png in Resources */,
 				DA915CC01E268B6B004B425C /* Task.storyboard in Resources */,
 				DA915CCC1E2698C6004B425C /* Publish.storyboard in Resources */,
 				DA3163691E1A9B3B00EA9965 /* 1.png in Resources */,
 				DA2BE2091DBE528900AEB48F /* Assets.xcassets in Resources */,
 				DA915CC21E268B72004B425C /* Chat.storyboard in Resources */,
+				DAB48B591E30DDE700CF7F6C /* QPTaskCell.xib in Resources */,
 				DA2E1BA21DE0545C00FAF81C /* Home.storyboard in Resources */,
 				DA915CC41E268B7A004B425C /* User.storyboard in Resources */,
 			);
@@ -498,7 +525,9 @@
 				DA2BE22C1DBE759E00AEB48F /* LoginVC.m in Sources */,
 				DAD3C2D71E15305200C73832 /* QPTaskListDatasource.m in Sources */,
 				DAD3C2D11E151D0600C73832 /* QPHomeVC.m in Sources */,
+				DAB48B641E312B3D00CF7F6C /* QPImageUploadImageCell.m in Sources */,
 				DA915CCF1E269ECA004B425C /* QPPublishVC.m in Sources */,
+				DAB48B681E312B8C00CF7F6C /* QPImageUploadCellDataSource.m in Sources */,
 				DAFBD56F1E2FE684000C1BC4 /* QPImageUploadCell.m in Sources */,
 				DA1DD1951DD07A4E008D0081 /* SigninVC.m in Sources */,
 				DA1DD19E1DD0AFBD008D0081 /* QPPicker.m in Sources */,
@@ -507,6 +536,7 @@
 				DA53019C1E266E10002A2FB4 /* QPTabbarController.m in Sources */,
 				DA915CCA1E269204004B425C /* QPPlusBtn.m in Sources */,
 				DA2BE1FE1DBE528900AEB48F /* main.m in Sources */,
+				DAB48B6B1E31428800CF7F6C /* QPImageUploadImageItem.m in Sources */,
 				DAD3C2DA1E1534B600C73832 /* QPTaskCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

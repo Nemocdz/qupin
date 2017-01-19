@@ -14,10 +14,10 @@
 
 @property (nonatomic,strong) QPTaskListItem *item;
 
-@property (nonatomic,strong) UILabel *taskTitileLabel;
-@property (nonatomic,strong) UIImageView *cellImageView;
-@property (nonatomic,strong) UILabel *mallNameLabel;
-@property (nonatomic,strong) UILabel *timeLabel;
-@property (nonatomic,strong) UILabel *moneyLabel;
+//@property (nonatomic,strong) UILabel *taskTitleLabel;
+//@property (nonatomic,strong) UIImageView *cellImageView;
+//@property (nonatomic,strong) UILabel *mallNameLabel;
+//@property (nonatomic,strong) UILabel *timeLabel;
+//@property (nonatomic,strong) UILabel *moneyLabel;
 
 @end

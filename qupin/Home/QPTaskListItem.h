@@ -13,11 +13,13 @@
 @interface QPTaskListItem : NSObject
 
 @property (nonatomic,assign) QPTaskItemType type;
-@property (nonatomic,copy) NSString *taskTitile;
+@property (nonatomic,copy) NSString *taskTitle;
 @property (nonatomic,strong) UIImage *taskImage;
 @property (nonatomic,copy) NSString *mallName;
 @property (nonatomic,strong) NSDate *createdAt;
 @property (nonatomic,copy) NSString *money;
 @property (nonatomic,copy) NSString *numberOfPeople;
-
+@property (nonatomic,assign) QPTaskStatus status;
+//@property (nonatomic,strong) QPUser *publisher;
+//location
 @end

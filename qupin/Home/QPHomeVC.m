@@ -34,11 +34,11 @@
 - (NSArray *)getItems{
     QPTaskListItem *item1 = [QPTaskListItem new];
     item1.type = QPPeopleType;
-    item1.taskTitile = @"Amazonjlkjklhklhkljkljkljkljkljkljkljkljkljljlkjkljlk";
+    item1.taskTitle = @"Amazonjlkjklhklhkljkljkljkljkljkljkljkljkljljlkjkljlk";
     item1.mallName = @"京东商城";
     item1.numberOfPeople = @"12";
     QPTaskListItem *item2 = [QPTaskListItem new];
-    item2.taskTitile = @"Sunindsalkjdskljdslkjsdlg";
+    item2.taskTitle = @"Sunindsalkjdskljdslkjsdlg";
     item2.mallName = @"京东商城";
     item2.type = QPMoneyType;
     item2.money = @"4000";
@@ -90,7 +90,8 @@
         _taskListView.dataSource = self.taskListDatasource;
         _taskListView.delegate = self;
         _taskListView.showsVerticalScrollIndicator = NO;
-        [_taskListView registerClass:[self.taskListDatasource cellClass] forCellReuseIdentifier:[self.taskListDatasource cellIdentifer]];
+        [_taskListView registerNib:[UINib nibWithNibName:@"QPTaskCell" bundle:nil] forCellReuseIdentifier:@"QPTaskCell"];
+       // [_taskListView registerClass:[self.taskListDatasource cellClass] forCellReuseIdentifier:[self.taskListDatasource cellIdentifer]];
         _taskListView.tableHeaderView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH * 9 / 16) imageNamesGroup:[self getImages]];
         _taskListView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [_taskListView reloadData];

@@ -9,9 +9,10 @@
 #import "QPPublishVC.h"
 #import "XLForm.h"
 #import "QPImageUploadCell.h"
-//NSString *const XLFormRowDescriptorTypeUpload = @"XLFormRowDescriptorTypeUpload";
+
 @interface QPPublishVC ()
 @property (strong, nonatomic) IBOutlet UIButton *submitBtn;
+- (IBAction)submit:(UIButton *)sender;
 
 @end
 
@@ -37,13 +38,7 @@
     return self;
 }
 
-//- (instancetype)init{
-//    self = [super init];
-//    if (self) {
-//        [self initializeForm];
-//    }
-//    return self;
-//}
+
 
 -(void)initializeForm{
     XLFormDescriptor *form = [XLFormDescriptor formDescriptor];
@@ -96,4 +91,6 @@
 
 
 
+- (IBAction)submit:(UIButton *)sender {
+}
 @end
