@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 //#import "QPBaseTableViewCell.h"
-@class QPTaskListItem;
+@class QPTaskItem;
 
 @interface QPTaskCell : UITableViewCell
 
-@property (nonatomic,strong) QPTaskListItem *item;
+@property (nonatomic,strong) QPTaskItem *item;
 
 //@property (nonatomic,strong) UILabel *taskTitleLabel;
 //@property (nonatomic,strong) UIImageView *cellImageView;

@@ -7,7 +7,7 @@
 //
 
 #import "QPTaskListDatasource.h"
-#import "QPTaskListItem.h"
+#import "QPTaskItem.h"
 #import "QPTaskCell.h"
 
 @implementation QPTaskListDatasource

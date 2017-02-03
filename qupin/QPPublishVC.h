@@ -6,8 +6,7 @@
 //  Copyright © 2017年 Nemocdz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "XLFormViewController.h"
+#import <XLForm/XLForm.h>
 
 @interface QPPublishVC : XLFormViewController
 

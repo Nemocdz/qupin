@@ -6,11 +6,8 @@
 //  Copyright © 2017年 Nemocdz. All rights reserved.
 //
 
-#import "XLFormBaseCell.h"
-#import "QPStringConstant.h"
+#import <XLForm/XLForm.h>
 
 @interface QPImageUploadCell : XLFormBaseCell
-
-
 
 @end

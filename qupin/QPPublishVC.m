@@ -7,8 +7,8 @@
 //
 
 #import "QPPublishVC.h"
-#import "XLForm.h"
 #import "QPImageUploadCell.h"
+#import "QPStringConstant.h"
 
 @interface QPPublishVC ()
 @property (strong, nonatomic) IBOutlet UIButton *submitBtn;
@@ -34,10 +34,10 @@
     self = [super initWithCoder:aDecoder];
     if (self){
         [self initializeForm];
+        self.tableView.estimatedRowHeight = 100.f;
     }
     return self;
 }
-
 
 
 -(void)initializeForm{
@@ -83,7 +83,7 @@
     row.hidden = [NSString stringWithFormat:@"NOT $%@.value contains '拼人数'", typeRow];
     [section addFormRow:row];
     
-    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"image" rowType:XLFormRowDescriptorTypeUpload];
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"image" rowType:QP_XLFormRowDescriptorTypeUpload];
     [section addFormRow:row];
     
     self.form = form;
@@ -92,5 +92,7 @@
 
 
 - (IBAction)submit:(UIButton *)sender {
+    NSDictionary *dic = self.formValues;
+    NSLog(@"%@",dic);
 }
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "QPMyTaskVC.h"
+#import "AppDelegate.h"
 
 @interface QPMyTaskVC ()
 

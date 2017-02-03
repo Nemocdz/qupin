@@ -11,7 +11,11 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIWindow *loginWindow;
+@property (strong, nonatomic) UIWindow *homeWindow;
 
++(void)openMainWindow;
++(void)openLoginWindow;
 
 @end
 

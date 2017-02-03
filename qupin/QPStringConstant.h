@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YYCategories.h"
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
@@ -18,24 +19,23 @@
 #define QP_TASKCELLOTHERBLACK [UIColor colorWithRed:0.31 green:0.31 blue:0.31 alpha:1.00]
 
 
-typedef NS_ENUM(NSInteger, QPTaskItemType) {
-    QPMoneyType,
-    QPPeopleType,
-};
+//typedef NS_ENUM(NSInteger, QPTaskItemType) {
+//    QPMoneyType,
+//    QPPeopleType,
+//};
+//
+//typedef NS_ENUM(NSInteger, QPTaskStatus) {
+//    QPTaskStatusAlive,
+//    QPTaskStatusCancel,
+//    QPTaskStatusOverTime,
+//    QPTaskStatusDone,
+//};
 
-typedef NS_ENUM(NSInteger, QPTaskStatus) {
-    QPTaskStatusAlive,
-    QPTaskStatusCancel,
-    QPTaskStatusOverTime,
-    QPTaskStatusDone,
-};
 
-static const float QPPublishImageCellHeight = 100.0f;
 
-static const int QPPublishImageCellLimit = 3;
+static NSString *const QP_XLFormRowDescriptorTypeUpload = @"XLFormRowDescriptorTypeUpload";
+static NSString *const QP_XLFormRowDescriptorTypePhone = @"XLFormRowDescriptorTypePhone";
+static NSString *const QP_XLFormRowDescriptorTypeSmsCode = @"XLFormRowDescriptorTypeSms";
 
-static NSString *const XLFormRowDescriptorTypeUpload = @"XLFormRowDescriptorTypeUpload";
-
-static NSString *const QPPublishDelImageNotice = @"QPPublishImageCellDelImageNotice";
 
 

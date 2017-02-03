@@ -8,7 +8,7 @@
 
 
 #import "QPTaskCell.h"
-#import "QPTaskListItem.h"
+#import "QPTaskItem.h"
 //#import "Masonry.h"
 #import "QPStringConstant.h"
 @interface QPTaskCell()
@@ -75,7 +75,7 @@
 //    
 //}
 
-- (void)setItem:(QPTaskListItem *)item{
+- (void)setItem:(QPTaskItem *)item{
     self.taskTitleLabel.text = item.taskTitle;
     self.mallNameLabel.text = item.mallName;
     self.timeLabel.text = @"4天后截止";

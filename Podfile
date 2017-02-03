@@ -1,8 +1,10 @@
 target 'qupin' do
-  pod 'MaxLeap/Core'
-  pod 'MaxLeap/WeChatUtils'
-  pod 'MaxLeap/QQUtils'
+  pod 'MBProgressHUD', '~> 1.0.0'                            
+  pod 'AFNetworking'
   pod 'Masonry'
+  pod 'YYModel'
+  pod 'YYImage'
+  pod 'YYCategories'
   pod 'CDZImagePicker'
   pod 'CYLTabBarController'
   pod 'MJRefresh'

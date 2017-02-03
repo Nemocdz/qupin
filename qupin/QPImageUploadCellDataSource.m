@@ -7,6 +7,7 @@
 //
 
 #import "QPImageUploadCellDataSource.h"
+#import "QPImageUploadImageItem.h"
 #import "QPImageUploadImageCell.h"
 
 @implementation QPImageUploadCellDataSource
@@ -24,8 +25,10 @@
 
 - (QPImageUploadImageCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     QPImageUploadImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"QPImageUploadImageCell" forIndexPath:indexPath];
-    cell.item = self.itemsArray[indexPath.row];
+    cell.item = self.itemsArray[indexPath.row];    
     return cell;
 }
+
+
 
 @end

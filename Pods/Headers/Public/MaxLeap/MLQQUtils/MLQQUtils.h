@@ -1,1 +1,0 @@
-../../../../MaxLeap/maxleap-sdk-ios/MLQQUtils.framework/Headers/MLQQUtils.h

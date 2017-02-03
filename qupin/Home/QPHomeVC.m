@@ -9,7 +9,7 @@
 #import "QPHomeVC.h"
 #import "QPTaskListDatasource.h"
 #import "QPStringConstant.h"
-#import "QPTaskListItem.h"
+#import "QPTaskItem.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "SDCycleScrollView.h"
 #import "MJRefresh.h"
@@ -19,6 +19,7 @@
 @property (nonatomic ,strong) UITableView *taskListView;
 @property (nonatomic ,strong) UICollectionView *carouselView;
 @property (nonatomic ,strong) QPTaskListDatasource *taskListDatasource;
+@property (nonatomic ,strong) NSArray *circleImageGroup;
 
 @end
 
@@ -26,18 +27,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
     [self.view addSubview:self.taskListView];
     [self.taskListView.mj_header beginRefreshing];
 }
 
 - (NSArray *)getItems{
-    QPTaskListItem *item1 = [QPTaskListItem new];
+    QPTaskItem *item1 = [QPTaskItem new];
     item1.type = QPPeopleType;
     item1.taskTitle = @"Amazonjlkjklhklhkljkljkljkljkljkljkljkljkljljlkjkljlk";
     item1.mallName = @"京东商城";
     item1.numberOfPeople = @"12";
-    QPTaskListItem *item2 = [QPTaskListItem new];
+    QPTaskItem *item2 = [QPTaskItem new];
     item2.taskTitle = @"Sunindsalkjdskljdslkjsdlg";
     item2.mallName = @"京东商城";
     item2.type = QPMoneyType;
@@ -52,16 +52,14 @@
 }
 
 - (NSArray *)getImages{
-    UIImage *image1 = [UIImage imageNamed:@"1.png"];
-    UIImage *image2 = [UIImage imageNamed:@"2.png"];
+    UIImage *image1 = [[UIImage imageNamed:@"1.png"]imageByResizeToSize:CGSizeMake(SCREEN_WIDTH, SCREEN_WIDTH * 9 / 16)];
+    UIImage *image2 = [[UIImage imageNamed:@"2.png"]imageByResizeToSize:CGSizeMake(SCREEN_WIDTH, SCREEN_WIDTH * 9 / 16)];
     NSMutableArray *mArray = [NSMutableArray new];
-    for (int i = 0; i < 1; i++) {
-        [mArray addObject:image1];
-        [mArray addObject:image2];
-        [mArray addObject:image2];
-    }
+    [mArray addObject:image1];
+    [mArray addObject:image2];
     return mArray;
 }
+
 
 
 
@@ -92,7 +90,7 @@
         _taskListView.showsVerticalScrollIndicator = NO;
         [_taskListView registerNib:[UINib nibWithNibName:@"QPTaskCell" bundle:nil] forCellReuseIdentifier:@"QPTaskCell"];
        // [_taskListView registerClass:[self.taskListDatasource cellClass] forCellReuseIdentifier:[self.taskListDatasource cellIdentifer]];
-        _taskListView.tableHeaderView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH * 9 / 16) imageNamesGroup:[self getImages]];
+        _taskListView.tableHeaderView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH * 9 / 16) imageNamesGroup:self.circleImageGroup];
         _taskListView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [_taskListView reloadData];
             [_taskListView.mj_header endRefreshing];
@@ -110,7 +108,12 @@
     return _taskListDatasource;
 }
 
-
+- (NSArray *)circleImageGroup{
+    if (!_circleImageGroup) {
+        _circleImageGroup = [self getImages];
+    }
+    return _circleImageGroup;
+}
 
 
 @end

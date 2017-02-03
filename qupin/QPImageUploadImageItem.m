@@ -13,7 +13,7 @@
 - (instancetype)init{
     if ((self = [super init])) {
         _image = [UIImage imageNamed:@"发单-添加"];
-        _closeBtnHidden = YES;
+        _closeBtnHidden = NO;
     }
     return self;
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Nemocdz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "CYLPlusButton.h"
+
+#import <CYLTabBarController/CYLPlusButton.h>
 
 @interface QPPlusBtn : CYLPlusButton<CYLPlusButtonSubclassing>
 

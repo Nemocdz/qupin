@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UICollectionView.h>
-@class QPImageUploadImageItem;
+
 
 @interface QPImageUploadCellDataSource : NSObject<UICollectionViewDataSource>
 
-@property (nonatomic,strong) NSMutableArray<QPImageUploadImageItem *> *itemsArray;
+@property (nonatomic,strong) NSMutableArray *itemsArray;
 
 @end

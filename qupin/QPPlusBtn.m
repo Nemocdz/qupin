@@ -8,6 +8,7 @@
 
 #import "QPPlusBtn.h"
 #import "CYLTabBarController.h"
+#import "AppDelegate.h"
 
 @implementation QPPlusBtn
 
@@ -24,6 +25,7 @@
 }
 
 - (void)clickPublish{
+   // [AppDelegate openLoginWindow];
     CYLTabBarController *tabBarController = [self cyl_tabBarController];
     UIViewController *seclectVC = tabBarController.selectedViewController;
     UIViewController *vc = [[UIStoryboard storyboardWithName:@"Publish" bundle:nil] instantiateInitialViewController];

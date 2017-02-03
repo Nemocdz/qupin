@@ -6,8 +6,7 @@
 //  Copyright © 2017年 Nemocdz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "CYLTabBarController.h"
+#import <CYLTabBarController/CYLTabBarController.h>
 
 @interface QPTabbarController : CYLTabBarController
 
