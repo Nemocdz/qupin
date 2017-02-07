@@ -8,6 +8,6 @@
 
 #import <XLForm/XLForm.h>
 
-@interface QPSigninVC : XLFormViewController
+@interface QPSignInVC : XLFormViewController
 
 @end

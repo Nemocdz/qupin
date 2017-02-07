@@ -10,8 +10,10 @@
 #import "QPStringConstant.h"
 #import "Masonry.h"
 #import "QPRegexHelper.h"
-#import <AFNetworking/AFNetworking.h>
-@interface QPPhoneNumberCell()
+#import "QPNetworking.h"
+#import "SVProgressHUD.h"
+
+@interface QPPhoneNumberCell()<QPSmsCodeDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *sendCodeBtn;
 - (IBAction)sendCode:(UIButton *)sender;
@@ -37,31 +39,26 @@
 
 
 - (IBAction)sendCode:(UIButton *)sender {
+    [SVProgressHUD setMinimumDismissTimeInterval:1];
     if ([QPRegexHelper checkTelNumber:self.textField.text]) {
-        
-        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-        manager.requestSerializer = [AFJSONRequestSerializer serializer];
-        [manager.requestSerializer setValue:@"4IH7mBWQiUNHLFk0EM64xzM6-gzGzoHsz" forHTTPHeaderField:@"X-LC-Id"];
-        [manager.requestSerializer setValue:@"1e3Om7o0ParIK1YIIqhb7gQp" forHTTPHeaderField:@"X-LC-Key"];
-        [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-        
-        manager.responseSerializer = [AFJSONResponseSerializer serializer];
-        NSDictionary *parameters = @{@"mobilePhoneNumber" : self.textField.text,
+        NSDictionary *smsInfo = @{@"mobilePhoneNumber" : self.textField.text,
                                      @"name" : @"趣拼",
-                                     @"ttl" : @200,
+                                     @"ttl" : @30,
                                      @"op" : @"注册"};
-        [manager POST:@"https://api.leancloud.cn/1.1/requestSmsCode" parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
-            
-        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            NSLog(@"短信已发送");
-            [self countDownBtn:sender];
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            NSLog(@"请检查网络");
-        }];
+        [[QPNetworking sharedManager]sendSmsCode:smsInfo];
     }
     else{
-        NSLog(@"请输入正确手机号");
+        [SVProgressHUD showErrorWithStatus:@"请输入正确的手机号"];
     }
+}
+
+- (void)sendSucess:(NSDictionary *)userInfo{
+    [SVProgressHUD showSuccessWithStatus:@"验证码已发送"];
+    [self countDownBtn:self.sendCodeBtn];
+}
+
+- (void)sendFailed:(NSError *)error{
+    [SVProgressHUD showErrorWithStatus:@"请求错误"];
 }
 
 

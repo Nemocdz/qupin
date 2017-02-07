@@ -10,11 +10,20 @@
 
 @interface QPUserItem : NSObject
 
-@property (nonatomic, readonly) NSString *userName;
+@property (nonatomic, readonly) NSString *username;
 @property (nonatomic, readonly) NSString *mobilePhoneNumber;
 @property (nonatomic, readonly) NSString *school;
 @property (nonatomic, readonly) NSString *sessionToken;
 
 + (QPUserItem *)currentUser;
+
+@end
+
+@interface QPLoginUser : QPUserItem
+
+@property (nonatomic, readonly) NSString *password;
+@property (nonatomic, readonly) NSString *smsCode;
+
++ (QPLoginUser *)loginUser:(NSDictionary *)userInfo;
 
 @end

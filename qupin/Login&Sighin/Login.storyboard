@@ -137,7 +137,7 @@
         <!--注册-->
         <scene sceneID="pZg-a4-a55">
             <objects>
-                <viewController id="hj4-JJ-REg" userLabel="注册" customClass="QPSigninVC" sceneMemberID="viewController">
+                <viewController id="hj4-JJ-REg" userLabel="注册" customClass="QPSignInVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DDo-jC-7Ua"/>
                         <viewControllerLayoutGuide type="bottom" id="era-XB-Ske"/>
@@ -201,9 +201,8 @@
                                     <action selector="clickLogin:" destination="IK1-JY-OqN" eventType="touchUpInside" id="veD-OB-Hih"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-cv-VMN">
-                                <rect key="frame" x="63" y="551" width="77" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-cv-VMN">
+                                <rect key="frame" x="149" y="557" width="77" height="30"/>
                                 <state key="normal" title="手机号登录"/>
                                 <connections>
                                     <segue destination="tCm-Qb-jhZ" kind="show" id="TWH-kS-YXX"/>
@@ -212,13 +211,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NC0-cv-VMN" secondAttribute="bottom" constant="80" id="Jws-8W-F3M"/>
                             <constraint firstAttribute="bottom" secondItem="cfv-f9-r9l" secondAttribute="bottom" id="O08-Hd-CDC"/>
                             <constraint firstAttribute="trailing" secondItem="cfv-f9-r9l" secondAttribute="trailing" id="ohp-4m-ePC"/>
                             <constraint firstItem="cfv-f9-r9l" firstAttribute="leading" secondItem="dWt-zH-nCr" secondAttribute="leading" id="sdC-Lx-Ud9"/>
+                            <constraint firstItem="NC0-cv-VMN" firstAttribute="centerX" secondItem="dWt-zH-nCr" secondAttribute="centerX" id="yWX-gm-h6N"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="登录" id="S6G-bY-epb"/>
                     <connections>
+                        <outlet property="phoneLoginBtn" destination="NC0-cv-VMN" id="aB2-QC-IX3"/>
                         <outlet property="submitBtn" destination="cfv-f9-r9l" id="LYW-xI-gxm"/>
                     </connections>
                 </viewController>

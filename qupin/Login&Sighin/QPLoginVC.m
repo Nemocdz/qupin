@@ -7,12 +7,15 @@
 //
 
 #import "QPLoginVC.h"
-#import <AFNetworking/AFNetworking.h>
+#import "QPNetworking.h"
 #import "QPUserItem.h"
+#import "SVProgressHUD.h"
+#import "AppDelegate.h"
 
-@interface QPLoginVC ()
+@interface QPLoginVC ()<QPLoginDelegate>
 @property (strong, nonatomic) IBOutlet UIButton *submitBtn;
 - (IBAction)clickLogin:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UIButton *phoneLoginBtn;
 
 @end
 
@@ -21,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view bringSubviewToFront:self.submitBtn];
+    [self.view bringSubviewToFront:self.phoneLoginBtn];
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder{
@@ -49,40 +53,33 @@
     [row.cellConfigAtConfigure setObject:@"请输入密码" forKey:@"textField.placeholder"];
     [section addFormRow:row];
     
-    
-    
     self.form = form;
 }
 
 
 - (IBAction)clickLogin:(UIButton *)sender {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    [manager.requestSerializer setValue:@"4IH7mBWQiUNHLFk0EM64xzM6-gzGzoHsz" forHTTPHeaderField:@"X-LC-Id"];
-    [manager.requestSerializer setValue:@"1e3Om7o0ParIK1YIIqhb7gQp" forHTTPHeaderField:@"X-LC-Key"];
-    [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    
-    
-    
-    NSDictionary *dic = self.formValues;
-    
-    
-    
-    [manager POST:@"https://api.leancloud.cn/1.1/login" parameters:dic progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        NSDictionary *responseDic = responseObject;
-        [userDefaults setObject:responseDic forKey:@"currentUser"];
-        [userDefaults synchronize];
-        NSDictionary *currentUser = [userDefaults objectForKey:@"currentUser"];
-        NSLog(@"%@",currentUser);
-        NSLog(@"%@",[QPUserItem currentUser].sessionToken);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
+    NSDictionary *userInfo = self.formValues;
+    QPLoginUser *user = [QPLoginUser loginUser:userInfo];
+    [SVProgressHUD setMinimumDismissTimeInterval:1];
+    if (user.username && user.password) {
+            [QPNetworking sharedManager].loginDelegate = self;
+            [[QPNetworking sharedManager] login:userInfo];
+    }
+    else{
+        [SVProgressHUD showErrorWithStatus:@"信息未填写完整"];
+    }
+}
 
-    
+- (void)loginSucess:(NSDictionary *)userInfo{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:userInfo forKey:@"currentUser"];
+    [userDefaults synchronize];
+    [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+    [AppDelegate openMainWindow];
+}
+
+- (void)loginFailed:(NSError *)error{
+    [SVProgressHUD showErrorWithStatus:@"发生错误"];
+    NSLog(@"%@",error);
 }
 @end

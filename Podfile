@@ -1,5 +1,5 @@
 target 'qupin' do
-  pod 'MBProgressHUD', '~> 1.0.0'                            
+  pod 'SVProgressHUD'                            
   pod 'AFNetworking'
   pod 'Masonry'
   pod 'YYModel'

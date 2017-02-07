@@ -32,7 +32,7 @@
 		DA915CCA1E269204004B425C /* QPPlusBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = DA915CC91E269204004B425C /* QPPlusBtn.m */; };
 		DA915CCC1E2698C6004B425C /* Publish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA915CCB1E2698C6004B425C /* Publish.storyboard */; };
 		DA915CCF1E269ECA004B425C /* QPPublishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA915CCE1E269ECA004B425C /* QPPublishVC.m */; };
-		DAA640471E326E9B0098BA62 /* QPSigninVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA640461E326E9B0098BA62 /* QPSigninVC.m */; };
+		DAA640471E326E9B0098BA62 /* QPSignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA640461E326E9B0098BA62 /* QPSignInVC.m */; };
 		DAA6404A1E3273FE0098BA62 /* QPFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA640491E3273FE0098BA62 /* QPFirstVC.m */; };
 		DAA82ABE1E156F24005FC736 /* QPTaskItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82ABD1E156F24005FC736 /* QPTaskItem.m */; };
 		DAB48B591E30DDE700CF7F6C /* QPTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB48B581E30DDE700CF7F6C /* QPTaskCell.xib */; };
@@ -102,8 +102,8 @@
 		DA915CCB1E2698C6004B425C /* Publish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Publish.storyboard; sourceTree = "<group>"; };
 		DA915CCD1E269ECA004B425C /* QPPublishVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPPublishVC.h; sourceTree = "<group>"; };
 		DA915CCE1E269ECA004B425C /* QPPublishVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPPublishVC.m; sourceTree = "<group>"; };
-		DAA640451E326E9B0098BA62 /* QPSigninVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPSigninVC.h; path = "Login&Sighin/QPSigninVC.h"; sourceTree = "<group>"; };
-		DAA640461E326E9B0098BA62 /* QPSigninVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPSigninVC.m; path = "Login&Sighin/QPSigninVC.m"; sourceTree = "<group>"; };
+		DAA640451E326E9B0098BA62 /* QPSignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPSignInVC.h; path = "Login&Sighin/QPSignInVC.h"; sourceTree = "<group>"; };
+		DAA640461E326E9B0098BA62 /* QPSignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPSignInVC.m; path = "Login&Sighin/QPSignInVC.m"; sourceTree = "<group>"; };
 		DAA640481E3273FE0098BA62 /* QPFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPFirstVC.h; path = "Login&Sighin/QPFirstVC.h"; sourceTree = "<group>"; };
 		DAA640491E3273FE0098BA62 /* QPFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPFirstVC.m; path = "Login&Sighin/QPFirstVC.m"; sourceTree = "<group>"; };
 		DAA82ABC1E156F24005FC736 /* QPTaskItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPTaskItem.h; path = Home/QPTaskItem.h; sourceTree = "<group>"; };
@@ -224,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2BE2211DBE545700AEB48F /* Login.storyboard */,
+				DA6851271E4A386F00AE61E5 /* View */,
 				DA2BE2261DBE54DC00AEB48F /* Controller */,
 			);
 			name = Login;
@@ -234,17 +235,12 @@
 			children = (
 				DAA640481E3273FE0098BA62 /* QPFirstVC.h */,
 				DAA640491E3273FE0098BA62 /* QPFirstVC.m */,
-				DAA640451E326E9B0098BA62 /* QPSigninVC.h */,
-				DAA640461E326E9B0098BA62 /* QPSigninVC.m */,
-				DA35F18D1E3A4A7B00D66762 /* QPSmsCodeCell.h */,
-				DA35F18E1E3A4A7B00D66762 /* QPSmsCodeCell.m */,
+				DAA640451E326E9B0098BA62 /* QPSignInVC.h */,
+				DAA640461E326E9B0098BA62 /* QPSignInVC.m */,
 				DA53FE701E37E11400699715 /* QPLoginVC.h */,
 				DA53FE711E37E11400699715 /* QPLoginVC.m */,
 				DA53FE731E37E1D800699715 /* QPPhoneLoginVC.h */,
 				DA53FE741E37E1D800699715 /* QPPhoneLoginVC.m */,
-				DA53FE661E37B72700699715 /* QPPhoneNumberCell.h */,
-				DA53FE671E37B72700699715 /* QPPhoneNumberCell.m */,
-				DA53FE681E37B72700699715 /* QPPhoneNumberCell.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -307,6 +303,18 @@
 				DA3C69D41E329A1900D32FA7 /* test.storyboard */,
 			);
 			name = Test;
+			sourceTree = "<group>";
+		};
+		DA6851271E4A386F00AE61E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA35F18D1E3A4A7B00D66762 /* QPSmsCodeCell.h */,
+				DA35F18E1E3A4A7B00D66762 /* QPSmsCodeCell.m */,
+				DA53FE661E37B72700699715 /* QPPhoneNumberCell.h */,
+				DA53FE671E37B72700699715 /* QPPhoneNumberCell.m */,
+				DA53FE681E37B72700699715 /* QPPhoneNumberCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		DA915CC51E268BE7004B425C /* Task */ = {
@@ -563,7 +571,7 @@
 				DAA82ABE1E156F24005FC736 /* QPTaskItem.m in Sources */,
 				DA2BE2011DBE528900AEB48F /* AppDelegate.m in Sources */,
 				DAD3C2D71E15305200C73832 /* QPTaskListDatasource.m in Sources */,
-				DAA640471E326E9B0098BA62 /* QPSigninVC.m in Sources */,
+				DAA640471E326E9B0098BA62 /* QPSignInVC.m in Sources */,
 				DAD3C2D11E151D0600C73832 /* QPHomeVC.m in Sources */,
 				DAB48B641E312B3D00CF7F6C /* QPImageUploadImageCell.m in Sources */,
 				DA915CCF1E269ECA004B425C /* QPPublishVC.m in Sources */,

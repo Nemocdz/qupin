@@ -10,7 +10,7 @@
 #import "YYModel.h"
 @interface QPUserItem()
 
-@property (nonatomic, readwrite) NSString *userName;
+@property (nonatomic, readwrite) NSString *username;
 @property (nonatomic, readwrite) NSString *mobilePhoneNumber;
 @property (nonatomic, readwrite) NSString *school;
 @property (nonatomic, readwrite) NSString *sessionToken;
@@ -32,6 +32,21 @@
         currentuser = [QPUserItem yy_modelWithDictionary:dic];
     });
     return currentuser;
+}
+
+@end
+
+@interface QPLoginUser()
+
+@property (nonatomic, readwrite) NSString *password;
+@property (nonatomic, readwrite) NSString *smsCode;
+
+@end
+
+@implementation QPLoginUser
+
++ (QPLoginUser *)loginUser:(NSDictionary *)userInfo{
+    return [QPLoginUser yy_modelWithDictionary:userInfo];
 }
 
 @end

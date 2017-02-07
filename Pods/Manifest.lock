@@ -17,13 +17,13 @@ PODS:
   - CDZImagePicker (1.0.0)
   - CYLTabBarController (1.10.0)
   - Masonry (1.0.2)
-  - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.12)
   - SDCycleScrollView (1.65):
     - SDWebImage (~> 3.7)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.1.2)
   - UITableView+FDTemplateLayoutCell (1.5.beta)
   - XLForm (3.3.0)
   - YYCategories (1.0.4):
@@ -39,9 +39,9 @@ DEPENDENCIES:
   - CDZImagePicker
   - CYLTabBarController
   - Masonry
-  - MBProgressHUD (~> 1.0.0)
   - MJRefresh
   - SDCycleScrollView (~> 1.64)
+  - SVProgressHUD
   - UITableView+FDTemplateLayoutCell (~> 1.5.beta)
   - XLForm (~> 3.0)
   - YYCategories
@@ -53,16 +53,16 @@ SPEC CHECKSUMS:
   CDZImagePicker: d595d9677bf02f6edc0d1c3ba5042e01b1899997
   CYLTabBarController: 2de9a4c26f50d33574398becf8e7b0aaed794240
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   UITableView+FDTemplateLayoutCell: 02b508ab1cb4cea16a8c17ac83d2cd1fd72124f9
   XLForm: d5c391dfc62865927b5bcab0a5a0dbfb3e02b0ec
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: dd70cc3bc90cf3ccf3aeaf805aeba567c7312cbb
+PODFILE CHECKSUM: 06c0631b985ad0c57c07a72e0fb192686017455f
 
 COCOAPODS: 1.2.0.rc.1
